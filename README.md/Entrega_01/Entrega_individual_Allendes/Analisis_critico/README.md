@@ -10,7 +10,7 @@
 1. Un simulador de costo de vida en el bus: Puede ser una herramienta interactiva donde el usuario ingrese a su comuna de origen y destino. El sistema, cruzando las bases de datos de tiempos de traslado que le proporcionamos, le devolvería a la persona que lo consulta el tiempo invertido en el traslado y una comparación promedio respecto a cuanto se demora una persona desde otro sector en un traslado de distancias similares.
 2. Cartografía del Hacinamiento Narrativo: La idea es superponer un mapa de calor que muestra la demanda con puntos de escucha. Cuando se hace click en los paraderos con mayor brecha de oferta, se despliega una sección de testimonios recolectados en terreno que describen la experiencia. Esto permitiría que el dato de subidas promedio cada media hora deje de ser solo un númer y se convierta en la voz de alguien que sufre con esta situación.
 
-#Arquetipo de Historia: David Contra Goliat
+# Arquetipo de Historia: David Contra Goliat
 
 * Se puede decir que nuestro arquetipo se ajusta al de David contra Goliat. Bajo esta premisa, el gigante es el sistema de transporte público metropolitano y su compleja burocracia técnica (representada por la DTPM y sus programas de operación), mientras que el David es el ciudadano común de la periferia que debe luchar diariamente contra una planificación que parece no tomarlo en cuenta.
 
