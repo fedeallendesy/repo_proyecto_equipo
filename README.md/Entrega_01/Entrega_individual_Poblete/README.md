@@ -1,0 +1,27 @@
+# Análisis crítico individual – Makarena Poblete 
+
+## ¿Qué esperas contar y/o revelar el tema? 
+
+Me encantaría revelar que más allá de que las zonas periféricas son las que tienen peor accesibilidad por estar lejanas al centro de la capital, son los lugares con mayor demanda de transporte público. Entonces no se estaría cubriendo las reales necesidades de la ciudadanía en la región Metropolitana.  
+
+Hay que tener en cuenta que las personas que viven en zonas periféricas suelen movilizarse en automóvil, porque no tienen acceso a transporte público. Entonces, con el alza de combustibles es bueno reflexionar si se está apuntando a gente que más requiere de un metro o bus, es decir, a la ciudadanía que realmente no puede financiar el combustible con los nuevos precios.  
+
+ 
+
+## Elabora al menos 2 ideas que te gustaría realizar para contar la historia 
+
+Me gustaría elaborar un mapa interactivo donde se muestre con puntos rojos las zonas donde hay una mayor demanda del transporte público. También, en este mismo mapa, sería interesante que al ampliar pueda verse la cantidad de personas que se sube a una micro en un paradero por hora.  
+
+Esta imagen, la compararía con otro mapa donde se muestre la accesibilidad que existe de transporte público en la capital, junto con la frecuencia de buses y metros en cada paradero o estación.  
+
+Estas dos ideas creo que funcionarían muy bien para contar la historia de una manera ilustrativa, sintetizando muchos datos en imágenes.  
+
+Por último, creo que sería genial identificar la comuna o sector donde exista un mayor problema de transporte público, es decir, un paradero o estación en el que haya alta demanda, pero poca frecuencia de buses o metro.  
+
+ 
+
+## Explica a qué arquetipo de historia pertenece tu proyecto (puedes revisar los arquetipos de historia en el material del curso). ¿Por qué crees que tu historia se ajusta a ese arquetipo? ¿Qué elementos de tu historia se relacionan con ese arquetipo? 
+
+Creo que esto podría pertenecer al arquetipo de revelación, porque existen muchos datos que aún no han sido vinculados, es decir, existen, pero no se han relacionado entre sí para saber si el transporte público en Santiago cubre las necesidades de la gente más lo requiere.  
+
+Los datos pueden demostrar que la demanda de transporte público no es abordada como se requiere y se están favoreciendo otros puntos de la capital que quizás no los necesitan tanto.  
