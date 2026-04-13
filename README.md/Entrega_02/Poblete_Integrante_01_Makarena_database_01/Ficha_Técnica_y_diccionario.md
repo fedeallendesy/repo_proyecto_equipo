@@ -2,7 +2,7 @@
 
 ### Fuente de los datos: Dirección de Transporte Público Metropolitano 
 
-Metodología de la construcción de la base: Se basa en el procesamiento y cruce de datos de parámetros (frecuencia y capacidad”, usando las variables de las hojas “Frec” y “Cap” del archivo consolidado.   
+Metodología de la construcción de la base: Se basa en el procesamiento y cruce de datos de parámetros "frecuencia y capacidad”, usando las variables de las hojas “Frec” y “Cap” del archivo consolidado.   
 
 ### Alcance de los datos:  
 
