@@ -145,6 +145,12 @@ Porque nuestra hipótesis es que en horas punta, especialmente en zonas perifér
 
 ### Lista de las fuentes de datos utilizadas y una explicación de por qué las eligieron:  
 
-* 11-Consolidado-Parametros (hojas de Frec y Cap). Es valiosa esta fuente de datos porque podemos verificar si los índices periféricos son altos, si es se usan buses más grandes en periferias y si es que las zonas periféricas tienen más presión que las centrales.  
+* 11-Consolidado-Parametros (hojas de Frec y Cap). Es valiosa esta fuente de datos porque podemos verificar si los índices periféricos son altos, si es se usan buses más grandes en periferias y si es que las zonas periféricas tienen más presión que las centrales. 
+
+
+### Ejemplos sobre preguntas que se pueden responder con su base de datos limpia, mínimo tres (3). 
+1. ¿Cuántas rutas operan en cada tipo de zona (Central, Periférica, Semi-Central)?
+2. ¿Existe una diferencia significativa en la frecuencia de buses entre las rutas de zonas centrales y las periféricas?
+3. ¿Qué unidades tienen mayor presencia en las zonas periféricas?
 
  
