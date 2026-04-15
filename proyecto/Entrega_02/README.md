@@ -14,11 +14,6 @@ La frecuencia de buses en Santiago no está alineada con los puntos de mayor dem
 - ¿Qué zonas presentan mayor demanda sobre el transporte público?
 
 ## Avances del proyecto
-- Construcción de una base de datos limpia, estructurada y lista para análisis.
-- Consolidación de variables clave: servicio, sentido, periodo horario y frecuencia.
-- Mejoramiento del enfoque para comparar demanda y oferta del sistema.
-- Avance en la definición de un indicador de presión territorial del transporte público.
+Durante esta etapa se logró construir una base de datos limpia, estructurada y lista para análisis. Se consolidaron variables clave como servicio, sentido, periodo horario y frecuencia, permitiendo una lectura homogénea de los datos.
 
-## Siguiente paso
-Revisar los datos limpios y los scripts de transformación en `proyecto/Entrega_02/Poblete_Integrante_01_Makarena_database_01/` para preparar el análisis final.
-
+Además, el proceso de limpieza permitió ajustar el enfoque del proyecto hacia una dimensión más precisa y abordable: la relación entre demanda y oferta del sistema. Esto sienta las bases para construir un indicador de presión que permita comparar territorialmente el funcionamiento del transporte público.
