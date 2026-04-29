@@ -1,23 +1,25 @@
-## Desigualdad en el Transporte Público Metropolitano 
+## Explicación del Proceso 
 
-En el corazón de la metrópoli, el transporte público no es solo un servicio; es el pulso que dicta quién llega a tiempo a su destino y quién queda rezagado en el paradero. Un análisis detallado de las frecuencias de buses en los periodos de hora punta y hora valle revela una realidad inquietante: la eficiencia del sistema está profundamente fracturada según el código postal. 
+1. Cargué el archivo CONSOLIDADO.xlsx. 
 
-Nuestra investigación, basada en los datos consolidados de operación, muestra que mientras las zonas centrales gozan de una regularidad envidiable, las periferias enfrentan una volatilidad que condiciona la vida de miles de ciudadanos. La hipótesis planteada es clara: existe una relación entre la ubicación geográfica de una ruta y la estabilidad de su frecuencia, penalizando a quienes viven más lejos de los centros de actividad económica. 
+2. Instalé Altair para hacer las gráficas, pegando el siguiente código: !pip install altair vl-convert-python 
 
+3. Seleccioné las columnas clave relacionadas con la identificación de rutas (Código Usuario, Unidad de Negocio), ubicación geográfica (TIPO_ZONA) y métricas de rendimiento (FREC_PUNTA, FREC_VALLE), lo anterior lo junté en una sola tabla limpia. 
 
-## El problema de la frecuencia
+4. Usé Altair de Python para crear un gráfico de dispersión interactivo que permite comparar visualmente el comportamiento de las rutas en diferentes periodos. Lo anterior lo hice creando el dibujo, después mostrando la gráfica y al final la guardé como una página web (HTML).  
 
-Al observar la visualización de datos, se muestra que los puntos que representan las rutas de la Zona Central tienden a agruparse en niveles de frecuencia más altos y estables. En contraste, las rutas de la Zona Periférica muestran una dispersión alarmante.  
+## Base de Datos (CSV) 
 
-Para un habitante del centro, la diferencia entre la hora punta (cuando todos salen a trabajar) y la hora valle (el resto del día) es manejable. Sin embargo, para los usuarios de zonas periféricas, el sistema parece no funcionar adecuadamente fuera de los horarios de máxima demanda. El índice de punta-valle en estas zonas es más alto, lo que indica que el servicio se reduce drásticamente cuando pasa la mañana. 
-  
+1. Seleccioné el conjunto de datos de frecuencias y capacidades porque permite medir directamente la calidad del servicio percibida por el usuario (tiempo de espera) 
 
-La visualización muestra cómo la línea de referencia (donde la frecuencia punta y valle serían iguales) es apenas un ideal. La mayoría de los servicios se sitúan muy por encima de esta línea, priorizando la hora punta. Pero es en la base del gráfico donde reside el problema social: un cúmulo de servicios periféricos que apenas alcanzan frecuencias mínimas, condenando al usuario a largas esperas bajo el sol o la lluvia. 
+2. Filtré los datos para centrarnos en la comparativa Punta vs Valle, limpiando columnas de horarios específicos que ya estaban consideradas y resumidas en los índices finales.  
+
+## Preguntas que responde la visualización 
+
+* ¿Qué zonas de la ciudad tienen los servicios de transporte más frecuentes? 
+
+* ¿Existe una reducción desproporcionada del servicio en zonas periféricas durante las horas valle en comparación con las zonas centrales? 
+
+* ¿Qué rutas específicas presentan el peor desempeño en términos de regularidad? 
 
  
-
-## Hacia una Transparencia Radical 
-
-Este reporte no solo busca señalar la falla, sino también documentar el proceso. La base de datos usada  fue procesada para asegurar que cada cifra cuente una historia real. La transparencia en estos datos es el primer paso para exigir una redistribución más justa de los recursos de transporte. 
-
-En conclusión, la movilidad urbana sigue siendo una de las caras más visibles de la desigualdad. Mientras el centro se mueve a un ritmo constante, la periferia sigue esperando un bus que, según los datos, tarda demasiado en llegar.
