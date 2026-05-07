@@ -20,4 +20,4 @@ El transporte público en Santiago no se distribuye de manera homogénea en el t
 
 El enfoque la investigación es entender si es que la operación de autobuses responde a los puntos de mayor demanda de los pasajeros. 
 
-Además, queremos indagar si realmente, como se supone socialmente, las zonas periféricas son las que tienen peor conectivida
+Además, queremos indagar si realmente, como se supone socialmente, las zonas periféricas son las que tienen peor conectividad.
