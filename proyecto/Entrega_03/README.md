@@ -14,7 +14,6 @@ En esta etapa sí nos coordinamos mejor con nuestras bases de datos, y las limpi
 La visualización permitió responder varias preguntas, sobre todo por los territorios donde hay más frecuencia de buses. 
 
 
-
 ## Síntesis de la historia: Resumen de la historia actual.
 El transporte público en Santiago no se distribuye de manera homogénea en el territorio. A partir del análisis de la frecuencia de autobuses y la subida de pasajeros a estos, esta historia busca identificar cómo se organiza la oferta del transporte en distintos sectores de la ciudad, en diferentes momentos del día, comparándolo con su demanda por territorio. 
 

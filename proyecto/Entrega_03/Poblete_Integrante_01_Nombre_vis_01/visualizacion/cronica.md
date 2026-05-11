@@ -1,7 +1,5 @@
 ## Desigualdad en el Transporte Público Metropolitano 
-En el corazón de la metrópoli, el transporte público no es solo un servicio; es el pulso que dicta quién llega a tiempo a su destino y quién queda rezagado en el paradero. Un análisis detallado de las frecuencias de buses en los periodos de hora punta y hora valle revela una realidad inquietante: la eficiencia del sistema está profundamente fracturada según el código postal. 
-
-Nuestra investigación, basada en los datos consolidados de operación, muestra que mientras las zonas centrales gozan de una regularidad envidiable, las periferias enfrentan una volatilidad que condiciona la vida de miles de ciudadanos. La hipótesis planteada es clara: existe una relación entre la ubicación geográfica de una ruta y la estabilidad de su frecuencia, penalizando a quienes viven más lejos de los centros de actividad económica. 
+El transporte público no es solo un servicio, determina quién llega a tiempo a su destino y quién queda rezagado en el paradero.
 
 
 ## El problema de la frecuencia
