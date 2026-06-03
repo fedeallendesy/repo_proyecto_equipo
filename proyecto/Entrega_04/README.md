@@ -1,25 +1,19 @@
 ## Hipótesis actual: ¿Qué se quiere demostrar o revelar? Una o dos frases.
-En la región Metropolitana existen comunas que, sobre todo en horarios puntas, tienen a una gran población que debe movilizarse en transporte público y el sistema de buses no distribuye su capacidad de manera equitativa.
+La aparente brecha de conectividad en la periferia de Santiago no se debe solo a una menor asignación de buses, sino a un modelo que responde mejor a la demanda concentrada que a la dispersa.
 
 ## Preguntas de investigación actuales: ¿Qué preguntas están guiando su trabajo con los datos?
-* ¿Qué territorios concentran más subidas de pasajeros al transporte público?
-* ¿En qué franjas horarias se produce mayor presión en el transporte público y sus paraderos?
-* ¿En la región Metropolitana la frecuencia de autobuses está alineada con los puntos y horarios donde más personas usan el sistema?
-* ¿Las comunas periféricas tienen peor conexión de buses RED o solo es una suposición de las personas?
-
-
-## Avance de su proyecto en relación con la hipótesis y preguntas de investigación : A nivel general y, por tanto, grupal, cómo las bases de datos les ayudarán a avanzar en la construcción de la historia hasta ahora. Cómo modificaron o reforzaron estos elementos lo que tenían planteado como historia.
-En esta etapa sí nos coordinamos mejor con nuestras bases de datos, y las limpiamos de manera que se logre una lectura clara de estos. 
-
-La visualización permitió responder varias preguntas, sobre todo por los territorios donde hay más frecuencia de buses. 
+* ¿Cómo se distribuye la densidad de subidas de pasajeros en las comunas centrales vs. las comunas periféricas de la RM?  
+* ¿Responde la frecuencia de los recorridos de buses a la suma total de demanda de un territorio o únicamente a los paraderos que tienen una alta demanda?
+* ¿De qué manera influye la congestión vial de las comunas periféricas en la efectividad de aumentar la frecuencia de buses en horario punta?
+* ¿Existe una diferencia en la capacidad de los buses asignados a las zonas de demanda dispersa en comparación con avenidas principales que cuentan con vías exclusivas para estos?  
 
 
 ## Síntesis de la historia: Resumen de la historia actual.
-El transporte público en Santiago no se distribuye de manera homogénea en el territorio. A partir del análisis de la frecuencia de autobuses y la subida de pasajeros a estos, esta historia busca identificar cómo se organiza la oferta del transporte en distintos sectores de la ciudad, en diferentes momentos del día, comparándolo con su demanda por territorio. 
+El transporte público en Santiago no se distribuye de manera homogénea en el territorio, pero la raíz de esta brecha va más allá de una simple falta de buses. 
 
-El enfoque la investigación es entender si es que la operación de autobuses responde a los puntos de mayor demanda de los pasajeros. 
+A partir del análisis de bases de datos de frecuencia y subidas de pasajeros, esta investigación revela cómo el sistema Red está diseñado para responder con éxito a la demanda concentrada —como estaciones de Metro y centros comunales consolidados—, pero falla en atender eficientemente a las comunas periféricas. 
 
-Además, queremos indagar si realmente, como se supone socialmente, las zonas periféricas son las que tienen peor conectividad.
+En estos sectores, la alta necesidad de transporte se encuentra espacialmente dispersa en múltiples paraderos, lo que invisibiliza la urgencia de mayor frecuencia bajo el modelo actual de transantiago.
 
 ## Manual de identidad:
 
