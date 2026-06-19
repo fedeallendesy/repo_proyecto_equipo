@@ -15,11 +15,25 @@ A partir del análisis de bases de datos de frecuencia y subidas de pasajeros, e
 
 En estos sectores, la alta necesidad de transporte se encuentra espacialmente dispersa en múltiples paraderos, lo que invisibiliza la urgencia de mayor frecuencia bajo el modelo actual de transantiago.
 
-## Manual de identidad:
+## Manual de Identidad Visual
 
-### Referencia al proceso de creación y moodboard.
+### Referencia al proceso de creación y moodboard
+La propuesta estética nace de la necesidad de graficar de forma urbana y documental la realidad de quienes deben iniciar su rutina de madrugada en la periferia de la capital. El moodboard rescata las texturas del asfalto, la densidad de la multitud y la oscuridad de la mañana. La propuesta visual busca situar inmersivamente al lector en el contexto físico y emocional del "madrugón" antes del amanecer.
 
-### Breve justificación de cada una de sus secciones (color, tipografía y recursos gráficos)
+### Breve justificación de cada una de sus secciones
+
+ **Paleta de Colores (Regla 60-30-10):**
+   **Gris Asfalto (60%):** Color dominante de fondo que representa la crudeza de las calles de madrugada. En términos de experiencia de usuario (UX), reduce significativamente la fatiga visual al leer la crónica en pantallas.
+   **Amarillo Señalética (30%):** Color secundario inspirado en las luces urbanas y líneas de tránsito. Aporta luminosidad para la lectura de subtítulos, marcos técnicos y elementos de apoyo.
+   **Rojo Sistema Red (10%):** Color de acento inspirado en los buses de transporte público. Se usaría para destacar datos críticos en los gráficos de Altair y botones interactivos, capturando la atención inmediata del usuario.
+
+ **Tipografías:**
+   **Segment A (Titulares):** Fuente condensada y de altísimo impacto que emula la señalética vial y los letreros de tránsito, aportando urgencia y peso periodístico.
+   **Montserrat (Cuerpo y Cifras):** Tipografía de diseño geométrico, limpio y moderno. Garantiza una legibilidad óptima para textos largos en dispositivos móviles y de escritorio, además de ser utilizada (en su variante *Bold*) para los ejes y etiquetas de datos.
+
+**Recursos Gráficos:**
+   **Estilo Fotográfico:** Fotografía documental urbana estrictamente en blanco y negro con alto contraste. Esto elimina la saturación visual de la ciudad y asegura que los únicos focos de color sean las alertas rojas de datos.
+   **Botones e Iconos:** Menús y botones interactivos con diseños de bloques sólidos y bordes rectos para evitar distracciones. La iconografía es de estilo lineal (*outline*), limpia y minimalista, inspirada en símbolos de tránsito urbano.
 
 ## Wireframes:
 ### Enlace al prototipo.
