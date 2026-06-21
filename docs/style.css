@@ -26,6 +26,19 @@ body{
     z-index:1000;
 }
 
+.navbar{
+    transition:.4s;
+}
+
+.navbar.scrolled{
+    background:#222;
+}
+
+.navbar.scrolled a,
+.navbar.scrolled span{
+    color:white;
+}
+
 .logo{
     display:flex;
     align-items:center;
@@ -37,6 +50,19 @@ body{
     width:40px;
     height:40px;
     border:2px solid #444;
+}
+
+nav.active{
+    display:flex;
+    flex-direction:column;
+    position:absolute;
+    top:80px;
+    right:20px;
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    border:1px solid #ddd;
+    gap:15px;
 }
 
 nav{
@@ -136,6 +162,10 @@ nav a{
     transform:translateX(-50%);
 }
 
+.scroll-indicator{
+    transition:.5s;
+}
+
 /* SECCIONES */
 
 .section{
@@ -144,6 +174,17 @@ nav a{
     grid-template-columns:1fr 1fr;
     gap:60px;
     align-items:center;
+}
+
+.section{
+    opacity:0;
+    transform:translateY(50px);
+    transition:1s;
+}
+
+.section.show{
+    opacity:1;
+    transform:translateY(0);
 }
 
 .reverse{
