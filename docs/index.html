@@ -5,186 +5,304 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desigualdad en el Sistema RED</title>
 
-    <link rel="stylesheet" href="style.css">
+    <!--
+    ╔══════════════════════════════════════════════════════╗
+    ║  FUENTES — Google Fonts                              ║
+    ║  Segment A   → h1, h2, h3, h4 (títulos)             ║
+    ║  Montserrat 400/500 → párrafos, nav, labels          ║
+    ║  Montserrat 700     → números y datos estadísticos   ║
+    ╚══════════════════════════════════════════════════════╝
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Segment+A&display=swap" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- NAVBAR -->
+<!-- ══════════════════════════════════════════════════════════
+     NAVBAR
+     Barra fija en la parte superior. Contiene el nombre del
+     proyecto a la izquierda, los enlaces de navegación al
+     centro-derecha y el botón hamburguesa para móvil.
+     El JS le agrega la clase .scrolled cuando el usuario baja.
+     ══════════════════════════════════════════════════════════ -->
+<header class="navbar" id="navbar">
 
-    <header class="navbar">
-        <div class="logo">
-            <div class="logo-box"></div>
-            <span>Desigualdad en el Sistema RED</span>
+    <div class="logo">
+        <span>Desigualdad en<br>el Sistema RED</span>
+    </div>
+
+    <nav id="main-nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#desigualdad">La desigualdad</a>
+        <a href="#historias">Historias</a>
+        <a href="#datos">Datos</a>
+        <a href="#mapa">Mapa</a>
+        <a href="#metodologia">Metodología</a>
+        <a href="#creditos">Créditos</a>
+    </nav>
+
+    <!-- Botón hamburguesa — visible solo en móvil (CSS lo muestra) -->
+    <button class="menu-btn" id="menu-btn" aria-label="Abrir menú">☰</button>
+
+</header>
+
+
+<!-- ══════════════════════════════════════════════════════════
+     HERO — PORTADA
+     Sección a pantalla completa con imagen de fondo.
+     IMAGEN DE FONDO: reemplaza "ilustracion_portada_final.png"
+     por el nombre de tu archivo de ilustración.
+     ══════════════════════════════════════════════════════════ -->
+<section id="inicio" class="hero">
+
+    <!-- Capa semitransparente sobre la imagen de fondo -->
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+        <div class="hero-text">
+            <h1>Desigualdad en el Sistema RED</h1>
+            <p>
+                Un recorrido por las brechas de acceso,
+                calidad y tiempos de viaje en el transporte
+                público de Santiago, Chile.
+            </p>
+            <a href="#desigualdad" class="btn-primary">▶ Ver introducción</a>
         </div>
+    </div>
 
-        <nav>
-            <a href="#inicio">Inicio</a>
-            <a href="#desigualdad">La desigualdad</a>
-            <a href="#historias">Historias</a>
-            <a href="#datos">Datos</a>
-            <a href="#mapa">Mapa</a>
-            <a href="#metodologia">Metodología</a>
-            <a href="#creditos">Créditos</a>
-        </nav>
+    <!-- Indicador animado de scroll -->
+    <div class="scroll-indicator">
+        <span>Scroll para comenzar</span>
+        <div class="scroll-arrow">↓</div>
+    </div>
 
-        <button class="menu-btn">☰</button>
-    </header>
+</section>
 
-    <!-- HERO -->
 
-    <section id="inicio" class="hero">
+<!-- ══════════════════════════════════════════════════════════
+     DIVISOR 1 — PASO DE CEBRA
+     Simula un cruce peatonal de Santiago visto desde arriba.
+     Fondo: asfalto gris oscuro (#2C2C2C).
+     Franjas: bloques blancos finos y alargados.
+     Bordes: líneas amarillas #FFDC4A (demarcación de calzada).
+     Para ajustar el tamaño edita .cebra-asfalto y .cebra-franja
+     en el CSS.
+     ══════════════════════════════════════════════════════════ -->
+<div class="divisor divisor-cebra" aria-hidden="true">
+    <div class="cebra-asfalto">
+        <div class="cebra-franja"></div>
+        <div class="cebra-franja"></div>
+        <div class="cebra-franja"></div>
+        <div class="cebra-franja"></div>
+        <div class="cebra-franja"></div>
+        <div class="cebra-franja"></div>
+        <div class="cebra-franja"></div>
+        <div class="cebra-franja"></div>
+        <div class="cebra-franja"></div>
+        <div class="cebra-franja"></div>
+        <div class="cebra-franja"></div>
+        <div class="cebra-franja"></div>
+        <div class="cebra-franja"></div>
+        <div class="cebra-franja"></div>
+        <div class="cebra-franja"></div>
+        <div class="cebra-franja"></div>
+        <div class="cebra-franja"></div>
+        <div class="cebra-franja"></div>
+        <div class="cebra-franja"></div>
+        <div class="cebra-franja"></div>
+        <div class="cebra-franja"></div>
+        <div class="cebra-franja"></div>
+        <div class="cebra-franja"></div>
+        <div class="cebra-franja"></div>
+        <div class="cebra-franja"></div>
+        <div class="cebra-franja"></div>
+        <div class="cebra-franja"></div>
+    </div>
+</div>
 
-        <div class="hero-overlay"></div>
 
-        <div class="hero-content">
+<!-- ══════════════════════════════════════════════════════════
+     SECCIÓN 01 — ¿QUÉ ES LA DESIGUALDAD EN EL SISTEMA RED?
+     Layout: 2 columnas (imagen | texto + estadísticas).
+     Señalética: disco PARE (DISCO_PARE.png) en la columna central.
+     Tamaño controlado por .señal-pare en el CSS.
+     ══════════════════════════════════════════════════════════ -->
+<section id="desigualdad" class="section seccion-tres-col">
 
-            <div class="hero-text">
-                <h1>Desigualdad en el Sistema RED</h1>
+    <!-- Columna imagen o gráfico -->
+    <div class="section-image">
+        <!-- Reemplaza el src por tu imagen o gráfico real -->
+        <img src="https://via.placeholder.com/500x400?text=Imagen+01" alt="Ilustración desigualdad transporte">
+    </div>
 
-                <p>
-                    Un recorrido por las brechas de acceso,
-                    calidad y tiempos de viaje en el transporte
-                    público de Santiago.
-                </p>
+    <!-- Señal PARE — costado derecho, imagen real PNG -->
+    <div class="señal-centro-wrapper">
+        <img src="DISCO_PARE.png" alt="Señal PARE" class="señal-centro señal-pare">
+    </div>
 
-                <a href="#" class="btn-primary">
-                    Ver introducción
-                </a>
+    <!-- Columna texto y estadísticas -->
+    <div class="section-content">
+        <span class="section-number">01</span>
+        <h2 class="titulo-con-linea">¿Qué es la desigualdad en el Sistema RED?</h2>
+        <p>
+            No todos en Santiago acceden al transporte público
+            de la misma manera. Existen grandes diferencias
+            según dónde vives, cuánto esperas y cuánto tiempo
+            tardas en llegar.
+        </p>
+
+        <!-- Tarjetas de estadísticas — los números usan Montserrat Bold -->
+        <div class="stats">
+
+            <div class="stat-card">
+                <span class="stat-icon">⏱</span>
+                <h3 class="stat-number">+45 min</h3>
+                <p>Tiempo promedio adicional en comunas periféricas</p>
             </div>
 
-            <div class="hero-play">
-                <button class="play-button">▶</button>
+            <div class="stat-card">
+                <span class="stat-icon">👥</span>
+                <h3 class="stat-number">2,5x</h3>
+                <p>Más tiempo de viaje en sectores más vulnerables</p>
+            </div>
+
+            <div class="stat-card">
+                <span class="stat-icon">📍</span>
+                <h3 class="stat-number">36%</h3>
+                <p>Menor cobertura de transporte de calidad</p>
             </div>
 
         </div>
+    </div>
 
-        <div class="scroll-indicator">
-            ↓ Scroll para comenzar
-        </div>
+</section>
 
-    </section>
 
-    <!-- SECCIÓN 01 -->
+<!-- ══════════════════════════════════════════════════════════
+     DIVISOR 2 — CARRIL SOLO BUS
+     Simula la demarcación vial de un carril exclusivo de bus
+     en Santiago. Fondo: asfalto oscuro.
+     Dos líneas amarillas continuas en los bordes del carril.
+     Texto "SOLO / BUS" pintado en amarillo sobre la calzada.
+     ══════════════════════════════════════════════════════════ -->
+<div class="divisor divisor-solobus" aria-hidden="true">
+    <div class="solobus-linea-discontinua"></div>
+</div>
 
-    <section id="desigualdad" class="section">
 
-        <div class="section-image">
-            <img src="https://via.placeholder.com/500x400" alt="">
-        </div>
+<!-- ══════════════════════════════════════════════════════════
+     SECCIÓN 02 — BRECHAS QUE ATRAVIESAN LA CIUDAD (MAPA)
+     Layout: 3 columnas (texto | señal | mapa).
+     Señalética: señal Solo Buses real (señal_solo_buses.png)
+     posicionada en el CENTRO entre el texto y el mapa,
+     actuando como separador visual entre las dos columnas.
+     ══════════════════════════════════════════════════════════ -->
+<section id="mapa" class="section reverse seccion-señal-centro">
 
-        <div class="section-content">
+    <!-- Columna izquierda: texto -->
+    <div class="section-content">
+        <span class="section-number">02</span>
+        <h2 class="titulo-con-linea">Brechas que atraviesan la ciudad</h2>
+        <p>
+            Las desigualdades en el Sistema RED
+            se expresan en el territorio.
+        </p>
+        <a href="#" class="btn-secondary">📍 Explorar en el mapa</a>
+    </div>
 
-            <span class="section-number">01</span>
+    <!-- Columna central: señal Solo Buses como separador visual -->
+    <div class="señal-centro-wrapper">
+        <img src="señal_solo_buses.png" alt="Señal Solo Buses" class="señal-centro señal-solobus">
+    </div>
 
-            <h2>¿Qué es la desigualdad en el Sistema RED?</h2>
+    <!-- Columna derecha: mapa o imagen -->
+    <div class="section-image">
+        <!-- Reemplaza el src por tu mapa interactivo o imagen real -->
+        <img src="https://via.placeholder.com/600x350?text=Mapa+Interactivo" alt="Mapa de brechas en Santiago">
+    </div>
 
-            <p>
-                No todos acceden al transporte público de la misma manera.
-                Existen diferencias según dónde vives, cuánto esperas y
-                cuánto tiempo tardas en llegar.
-            </p>
+</section>
 
-            <div class="stats">
 
-                <div class="stat-card">
-                    <h3>+45 min</h3>
-                    <p>Tiempo adicional promedio</p>
-                </div>
+<!-- ══════════════════════════════════════════════════════════
+     SECCIÓN 03 — HISTORIAS QUE IMPORTAN
+     Layout: 2 columnas (imagen | texto).
+     Señalética: señal de Velocidad Máxima 30 km/h (velocidad.png) 
+     en la primera columna. Tamaño controlado por .señal-velocidad en el CSS.
+     ══════════════════════════════════════════════════════════ -->
+<section id="historias" class="section seccion-tres-col">
 
-                <div class="stat-card">
-                    <h3>2,5x</h3>
-                    <p>Más tiempo de viaje</p>
-                </div>
+    <!-- Señal Velocidad — costado izquierdo, imagen real PNG -->
+    <div class="señal-centro-wrapper">
+     <img src="velocidad.png" alt="Señal Velocidad" class="señal-centro señal-velocidad">
+    </div>
 
-                <div class="stat-card">
-                    <h3>36%</h3>
-                    <p>Menor cobertura</p>
-                </div>
+    <!-- Columna izquierda: imagen o fotografía -->
+    <div class="section-image">
+        <!-- Reemplaza el src por tu imagen real -->
+        <img src="https://via.placeholder.com/500x350?text=Historias" alt="Historias de usuarios del transporte">
+    </div>
 
-            </div>
+    <!-- Columna derecha: texto -->
+    <div class="section-content">
+        <span class="section-number">03</span>
+        <h2 class="titulo-con-linea">Historias que importan</h2>
+        <p>
+            Detrás de cada viaje hay decisiones, obstáculos
+            y realidades distintas. Conoce experiencias de
+            personas que viven la desigualdad todos los días.
+        </p>
+        <a href="#" class="btn-secondary">💬 Leer historias</a>
+    </div>
 
-        </div>
+</section>
 
-    </section>
 
-    <!-- SECCIÓN 02 -->
+<!-- ══════════════════════════════════════════════════════════
+     SECCIÓN DE CIERRE
+     Imagen de fondo con texto reflexivo posicionado a la derecha.
+     IMAGEN DE FONDO: reemplaza "ilustracion_cierre_gris.png"
+     por el nombre de tu archivo de ilustración de cierre.
+     El cuadro blanco tiene borde izquierdo amarillo #FFDC4A.
+     ══════════════════════════════════════════════════════════ -->
+<section class="closing-image" id="datos">
+    <div class="closing-overlay">
+        <h2>La ciudad se mueve, pero no todos la viven igual.</h2>
+        <p>
+            Comprender las desigualdades del Sistema RED es el primer paso
+            para construir un transporte más justo.
+        </p>
+    </div>
+</section>
 
-    <section id="mapa" class="section reverse">
 
-        <div class="section-content">
+<!-- ══════════════════════════════════════════════════════════
+     FOOTER
+     Pie de página con fondo negro y línea amarilla superior.
+     Contiene: nombre del proyecto | redes sociales | botón Créditos.
+     ══════════════════════════════════════════════════════════ -->
+<footer id="creditos">
 
-            <span class="section-number">02</span>
+    <div class="footer-info">
+        <strong>Desigualdad en el Sistema RED</strong>
+        <span>Santiago, Chile</span>
+    </div>
 
-            <h2>Brechas que atraviesan la ciudad</h2>
+    <div class="socials">
+        <a href="#" aria-label="X (Twitter)">𝕏</a>
+        <a href="#" aria-label="Facebook">f</a>
+        <a href="#" aria-label="Instagram">◎</a>
+        <a href="#" aria-label="YouTube">▶</a>
+    </div>
 
-            <p>
-                Las desigualdades del Sistema RED se expresan
-                territorialmente.
-            </p>
+    <button class="btn-secondary" id="btn-creditos">Créditos</button>
 
-            <a href="#" class="btn-secondary">
-                Explorar mapa
-            </a>
+</footer>
 
-        </div>
 
-        <div class="section-image">
-            <img src="https://via.placeholder.com/600x350" alt="">
-        </div>
-
-    </section>
-
-    <!-- SECCIÓN 03 -->
-
-    <section id="historias" class="section">
-
-        <div class="section-image">
-            <img src="https://via.placeholder.com/500x350" alt="">
-        </div>
-
-        <div class="section-content">
-
-            <span class="section-number">03</span>
-
-            <h2>Historias que importan</h2>
-
-            <p>
-                Detrás de cada viaje hay decisiones,
-                obstáculos y realidades distintas.
-            </p>
-
-            <a href="#" class="btn-secondary">
-                Leer historias
-            </a>
-
-        </div>
-
-    </section>
-
-    <!-- FOOTER -->
-
-    <footer id="creditos">
-
-        <div class="footer-logo">
-            Desigualdad en el Sistema RED
-        </div>
-
-        <div class="socials">
-            <a href="#">X</a>
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
-            <a href="#">YouTube</a>
-        </div>
-
-        <button class="btn-secondary">
-            Créditos
-        </button>
-
-    </footer>
-    
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
-
 </html>
