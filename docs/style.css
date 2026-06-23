@@ -544,11 +544,7 @@ Para cambiar el tamaño de cada señal individualmente:
 /* ── Señal central (Solo Buses) ───────────────────────── */
 
 /* La sección 02 usa 3 columnas: texto | señal | imagen */
-.seccion-señal-centro {
-    grid-template-columns: 1fr auto 1fr;
-    gap: 40px;
-}
-
+.seccion-señal-centro,
 .seccion-tres-col {
     grid-template-columns: 1fr auto 1fr;
     gap: 40px;
@@ -570,14 +566,15 @@ Para cambiar el tamaño de cada señal individualmente:
     transition: transform 0.4s, filter 0.4s;
 }
 
-.señal-pare      { width: 200px; }   /* ajusta este número */
-.señal-solobus   { width: 120px; }  /* ajusta este número */
-.señal-velocidad { width: 150px; }  /* ajusta este número */
-
 .section:hover .señal-centro {
     transform: scale(1.05);
     filter: drop-shadow(0 8px 22px rgba(0,0,0,0.28));
 }
+
+/* Tamaños individuales — ajustar números libremente */
+.señal-pare      { width: 200px; }
+.señal-solobus   { width: 120px; }
+.señal-velocidad { width: 150px; }
 
 
 /* ══════════════════════════════════════════════════════════
@@ -764,6 +761,8 @@ footer .btn-secondary:hover {
 
     .seccion-señal-centro .section-content { order: 1; }
     .seccion-señal-centro .section-image   { order: 3; }
+    .seccion-tres-col .section-content     { order: 1; }
+    .seccion-tres-col .section-image       { order: 3; }
 
     /* Cierre — cuadro a ancho completo */
     .closing-image {
