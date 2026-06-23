@@ -744,6 +744,36 @@ footer .btn-secondary:hover {
     color: #CC1F1F;
 }
 
+/* Viñetas estilizadas */
+.section-content ul,
+.cuadro-lectura ul {
+    list-style: none;
+    padding: 0;
+    margin: 16px 0;
+}
+.section-content ul li,
+.cuadro-lectura ul li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #555;
+    padding: 6px 0 6px 24px;
+    position: relative;
+    border-bottom: 1px solid #e8e8e8;
+}
+.section-content ul li::before,
+.cuadro-lectura ul li::before {
+
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background: #FFDC4A;
+    border-radius: 2px;
+}
+
 /* ══════════════════════════════════════════════════════════
    RESPONSIVE — PANTALLAS MEDIANAS Y PEQUEÑAS (máx. 900px)
    ══════════════════════════════════════════════════════════ */
