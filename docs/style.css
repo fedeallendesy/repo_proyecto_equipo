@@ -692,6 +692,57 @@ footer .btn-secondary:hover {
     color: #FFDC4A;
 }
 
+/* Cuadro explicativo de cómo leer el gráfico */
+.cuadro-lectura {
+    background: #f5f2eb;
+    border-left: 4px solid #FFDC4A;
+    border-radius: 6px;
+    padding: 16px 20px;
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.88rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+.cuadro-lectura strong {
+    font-weight: 700;
+    color: #1a1a1a;
+    display: block;
+    margin-bottom: 6px;
+}
+
+/* Tabla comparativa de comunas */
+.tabla-datos {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.88rem;
+    margin-top: 24px;
+}
+
+.tabla-datos th {
+    background: #1a1a1a;
+    color: #FFDC4A;
+    padding: 10px 14px;
+    text-align: left;
+    font-weight: 700;
+}
+
+.tabla-datos td {
+    padding: 10px 14px;
+    border-bottom: 1px solid #e0e0e0;
+    color: #333;
+}
+
+.tabla-datos tr:hover td {
+    background: #f9f6ef;
+}
+
+.tabla-datos .stat-number {
+    font-weight: 700;
+    color: #CC1F1F;
+}
 
 /* ══════════════════════════════════════════════════════════
    RESPONSIVE — PANTALLAS MEDIANAS Y PEQUEÑAS (máx. 900px)

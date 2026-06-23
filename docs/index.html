@@ -131,11 +131,14 @@
      ══════════════════════════════════════════════════════════ -->
 <section id="desigualdad" class="section seccion-tres-col">
 
-    <!-- Columna imagen o gráfico -->
-    <div class="section-image">
-        <!-- Reemplaza el src por tu imagen o gráfico real -->
-        <img src="https://via.placeholder.com/500x400?text=Imagen+01" alt="Ilustración desigualdad transporte">
-    </div>
+    <!-- Columna gráfico -->
+    <iframe
+    src="VISUALIZACION_1_MAKA.html"
+    width="100%"
+    height="500"
+    style="border: none; border-radius: 8px;"
+    title="Gráfico frecuencia punta vs valle"
+    ></iframe>
 
     <!-- Señal PARE — costado derecho, imagen real PNG -->
     <div class="señal-centro-wrapper">
@@ -173,6 +176,12 @@
             </div>
 
         </div>
+        
+        <!-- Cuadro explicativo del gráfico -->
+        <div class="cuadro-lectura">
+            <p><strong>¿Cómo leer este gráfico?</strong></p>
+            <p>Cada punto es una ruta del Sistema RED. El eje vertical muestra cuántos buses pasan por hora en horario punta (7:00–9:00). El eje horizontal muestra lo mismo en horario valle (fuera del peak). Mientras más arriba y a la izquierda esté un punto, más desigual es el servicio según la hora del día.</p>
+        </div>
     </div>
 
 </section>
@@ -208,7 +217,6 @@
         <p>
             Maipú y Puente Alto concentran toda su demanda en la mañana: sus habitantes salen antes de las 7:00 porque viven lejos del trabajo. Las Condes tiene su peak a las 18:00, cuando la gente regresa. Esta diferencia no es solo horaria: refleja quién depende del bus, quién tiene metro cerca y cuánto tiempo pierde en el camino.
         </p>
-        <a href="#" class="btn-secondary">📍 Explorar en el mapa</a>
     </div>
 
     <!-- Columna central: señal Solo Buses como separador visual -->
@@ -220,6 +228,50 @@
     <div class="section-image">
         <!-- Reemplaza el src por tu mapa interactivo o imagen real -->
         <img src="https://via.placeholder.com/600x350?text=Mapa+Interactivo" alt="Mapa de brechas en Santiago">
+    
+                <!-- Cuadro explicativo del gráfico -->
+            <div class="cuadro-lectura">
+                <p><strong>¿Cómo leer este gráfico?</strong></p>
+                <p>Cada línea representa una comuna. El eje horizontal es la hora del día y el eje vertical muestra el promedio de subidas por hora. Pasa el cursor sobre las líneas para ver los datos exactos de cada hora.</p>
+            </div>
+
+            <!-- Tabla comparativa de paraderos y demanda -->
+            <table class="tabla-datos">
+                <thead>
+                    <tr>
+                        <th>Comuna</th>
+                        <th>Paraderos bus</th>
+                        <th>Subidas en punta</th>
+                        <th>Promedio por paradero</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Las Condes</td>
+                        <td>452</td>
+                        <td>83.597</td>
+                        <td class="stat-number">185</td>
+                    </tr>
+                    <tr>
+                        <td>Santiago</td>
+                        <td>576</td>
+                        <td>101.789</td>
+                        <td class="stat-number">177</td>
+                    </tr>
+                    <tr>
+                        <td>Maipú</td>
+                        <td>844</td>
+                        <td>80.450</td>
+                        <td class="stat-number">95</td>
+                    </tr>
+                    <tr>
+                        <td>Puente Alto</td>
+                        <td>934</td>
+                        <td>61.486</td>
+                        <td class="stat-number">66</td>
+                    </tr>
+                </tbody>
+            </table>
     </div>
 
 </section>
