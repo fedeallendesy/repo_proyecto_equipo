@@ -241,3 +241,29 @@ if (btnCreditos) {
         alert("Créditos: Proyecto de periodismo de datos sobre la desigualdad en el Sistema RED de Santiago.");
     });
 }
+
+/* ══════════════════════════════════════════════════════════
+   8. VIDEO SECCIÓN 03 — REPRODUCCIÓN AUTOMÁTICA AL HACER SCROLL
+   IntersectionObserver detecta cuando el video entra en pantalla.
+   Se reproduce automáticamente y se pausa al salir del viewport.
+   ══════════════════════════════════════════════════════════ */
+
+const videoSec3 = document.getElementById('video-seccion3');
+
+if (videoSec3) {
+
+    const videoObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                videoSec3.play();
+            } else {
+                videoSec3.pause();
+            }
+        });
+    }, {
+        threshold: 0.4 /* se activa cuando el 40% del video es visible */
+    });
+
+    videoObserver.observe(videoSec3);
+
+}
