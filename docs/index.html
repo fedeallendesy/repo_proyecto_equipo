@@ -239,13 +239,13 @@
 
 <!-- ══════════════════════════════════════════════════════════
      SECCIÓN 02 — BRECHAS QUE ATRAVIESAN LA CIUDAD
-     Layout: Texto + Tabla a la izquierda | Visualización a ancho completo abajo
-     La visualización ocupa el ancho completo con el cuadro de lectura debajo.
+     Layout: Texto + Tabla arriba en 2 columnas | Visualización abajo a ancho completo
      ══════════════════════════════════════════════════════════ -->
 <section id="demanda" class="section section-demanda-layout">
 
-    <!-- Contenedor izquierdo: texto y tabla -->
-    <div class="seccion-02-izquierda">
+    <!-- Contenedor superior: texto y tabla en 2 columnas -->
+    <div class="demanda-superior">
+        <!-- Columna izquierda: texto -->
         <div class="section-content">
             <span class="section-number">02</span>
             <h2 class="titulo-con-linea">DEMANDA CONCENTRADA</h2>
@@ -257,47 +257,49 @@
             </p>
         </div>
 
-        <!-- Tabla comparativa de paraderos y demanda -->
-        <table class="tabla-datos">
-            <thead>
-                <tr>
-                    <th>Comuna</th>
-                    <th>Paraderos bus</th>
-                    <th>Subidas en punta</th>
-                    <th>Promedio por paradero</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Las Condes</td>
-                    <td>452</td>
-                    <td>83.597</td>
-                    <td class="stat-number">185</td>
-                </tr>
-                <tr>
-                    <td>Santiago</td>
-                    <td>576</td>
-                    <td>101.789</td>
-                    <td class="stat-number">177</td>
-                </tr>
-                <tr>
-                    <td>Maipú</td>
-                    <td>844</td>
-                    <td>80.450</td>
-                    <td class="stat-number">95</td>
-                </tr>
-                <tr>
-                    <td>Puente Alto</td>
-                    <td>934</td>
-                    <td>61.486</td>
-                    <td class="stat-number">66</td>
-                </tr>
-            </tbody>
-        </table>
+        <!-- Columna derecha: tabla -->
+        <div>
+            <table class="tabla-datos">
+                <thead>
+                    <tr>
+                        <th>Comuna</th>
+                        <th>Paraderos bus</th>
+                        <th>Subidas en punta</th>
+                        <th>Promedio por paradero</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Las Condes</td>
+                        <td>452</td>
+                        <td>83.597</td>
+                        <td class="stat-number">185</td>
+                    </tr>
+                    <tr>
+                        <td>Santiago</td>
+                        <td>576</td>
+                        <td>101.789</td>
+                        <td class="stat-number">177</td>
+                    </tr>
+                    <tr>
+                        <td>Maipú</td>
+                        <td>844</td>
+                        <td>80.450</td>
+                        <td class="stat-number">95</td>
+                    </tr>
+                    <tr>
+                        <td>Puente Alto</td>
+                        <td>934</td>
+                        <td>61.486</td>
+                        <td class="stat-number">66</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 
-    <!-- Contenedor derecho: visualización a ancho completo -->
-    <div class="seccion-02-derecha">
+    <!-- Contenedor inferior: visualización a ancho completo -->
+    <div class="demanda-inferior">
         <iframe
             src="volumen pasajeros.png"
             width="100%"

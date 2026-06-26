@@ -512,11 +512,9 @@ nav.active {
     max-width: 480px;
 }
 
-
 /* ══════════════════════════════════════════════════════════
-   SECCIÓN 02 — LAYOUT ESPECIAL (TEXTO+TABLA | VISUALIZACIÓN)
-   Texto y tabla a la izquierda en una columna.
-   Visualización a ancho completo abajo.
+   SECCIÓN 02 — LAYOUT ESPECIAL
+   Texto + Tabla arriba en 2 columnas | Visualización abajo a ancho completo
    ══════════════════════════════════════════════════════════ */
 
 .section-demanda-layout {
@@ -547,18 +545,6 @@ nav.active {
     flex-direction: column;
     gap: 20px;
     width: 100%;
-}
-
-.seccion-02-izquierda {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-
-.seccion-02-derecha {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
 }
 
 /* En pantallas pequeñas, la sección 02 se adapta */
