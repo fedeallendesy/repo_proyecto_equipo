@@ -308,6 +308,47 @@ nav.active {
 
 
 /* ══════════════════════════════════════════════════════════
+   SECCIÓN MAPA — PUNTOS CALIENTES (ANCHO COMPLETO)
+   Layout: ancho completo con título, descripción y mapa grande.
+   ══════════════════════════════════════════════════════════ */
+
+.section-mapa-full {
+    display: block;
+    padding: 80px 6%;
+    max-width: 100%;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.section-mapa-full.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.mapa-contenedor {
+    width: 100%;
+}
+
+.mapa-descripcion {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 28px;
+    max-width: 100%;
+}
+
+.contenedor-mapa {
+    position: relative;
+    width: 100%;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+
+/* ══════════════════════════════════════════════════════════
    DIVISOR 1 — PASO DE CEBRA
    Fondo: asfalto gris oscuro (#2C2C2C).
    Bordes: líneas amarillas #FFDC4A (::before y ::after).
@@ -412,7 +453,7 @@ nav.active {
 /* ══════════════════════════════════════════════════════════
    SECCIONES DE CONTENIDO (01, 02, 03)
    Grid de 2 columnas por defecto.
-   La sección 02 usa 3 columnas (texto | señal | imagen).
+   La sección 02 usa layout especial (texto+tabla | visualización).
    position: relative es necesario para las señaléticas laterales.
    La animación de entrada la activa el JS con la clase .show.
    ══════════════════════════════════════════════════════════ */
@@ -469,6 +510,63 @@ nav.active {
     color: #555;
     margin-bottom: 28px;
     max-width: 480px;
+}
+
+
+/* ══════════════════════════════════════════════════════════
+   SECCIÓN 02 — LAYOUT ESPECIAL (TEXTO+TABLA | VISUALIZACIÓN)
+   Texto y tabla a la izquierda en una columna.
+   Visualización a ancho completo abajo.
+   ══════════════════════════════════════════════════════════ */
+
+.section-demanda-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 110px 10%;
+    background: #F2F2F0;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.section-demanda-layout.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.demanda-superior {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+.demanda-inferior {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.seccion-02-izquierda {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.seccion-02-derecha {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* En pantallas pequeñas, la sección 02 se adapta */
+@media (max-width: 900px) {
+    .section-demanda-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
 }
 
 
@@ -578,10 +676,112 @@ Para cambiar el tamaño de cada señal individualmente:
 
 
 /* ══════════════════════════════════════════════════════════
+   SECCIÓN 04 — TESTIMONIOS
+   Layout: 3 columnas con tarjetas de testimonios.
+   ══════════════════════════════════════════════════════════ */
+
+.section-testimonios {
+    display: block;
+    padding: 110px 10%;
+    background: #fff;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.section-testimonios.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.testimonios-header {
+    margin-bottom: 60px;
+    max-width: 600px;
+}
+
+.testimonios-header h2 {
+    font-size: clamp(1.8rem, 2.5vw, 2.5rem);
+    margin-bottom: 16px;
+}
+
+.testimonios-intro {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.testimonios-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.testimonio-card {
+    background: #fff;
+    border: 2px solid #FFDC4A;
+    border-radius: 8px;
+    padding: 32px 24px;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+/* Barra amarilla superior */
+.testimonio-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: #FFDC4A;
+    border-radius: 8px 8px 0 0;
+}
+
+.testimonio-card:hover {
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+    transform: translateY(-6px);
+}
+
+.testimonio-avatar {
+    font-size: 3.5rem;
+    margin-bottom: 16px;
+    display: block;
+}
+
+.testimonio-nombre {
+    font-family: 'Segment A', sans-serif;
+    font-size: 1.3rem;
+    color: #111;
+    margin-bottom: 4px;
+    font-weight: 400;
+}
+
+.testimonio-cargo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85rem;
+    color: #CC1F1F;
+    font-weight: 600;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.testimonio-texto {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.7;
+    margin: 0;
+}
+
+
+/* ══════════════════════════════════════════════════════════
    SECCIÓN DE CIERRE
-   Imagen de fondo: ilustracion_cierre_gris.png.
-   El cuadro de texto está posicionado a la derecha,
-   con borde izquierdo amarillo #FFDC4A.
+   Imagen de fondo con texto reflexivo posicionado a la derecha.
+   IMAGEN DE FONDO: reemplaza "ilustracion_cierre_gris.png"
+   por el nombre de tu archivo de ilustración de cierre.
+   El cuadro blanco tiene borde izquierdo amarillo #FFDC4A.
    ══════════════════════════════════════════════════════════ */
 
 .closing-image {
@@ -824,6 +1024,15 @@ footer .btn-secondary:hover {
         font-size: 2.4rem;
     }
 
+    .section-demanda-layout {
+    gap: 40px;
+    }
+    
+    .demanda-superior {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    }
+
     /* Secciones — 1 columna */
     .section {
         grid-template-columns: 1fr;
@@ -862,6 +1071,17 @@ footer .btn-secondary:hover {
     .seccion-señal-centro .section-image   { order: 3; }
     .seccion-tres-col .section-content     { order: 1; }
     .seccion-tres-col .section-image       { order: 3; }
+
+    /* Sección mapa */
+    .section-mapa-full {
+        padding: 60px 6%;
+    }
+
+    /* Sección testimonios */
+    .testimonios-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
 
     /* Cierre — cuadro a ancho completo */
     .closing-image {
@@ -913,6 +1133,10 @@ footer .btn-secondary:hover {
 
     .closing-overlay h2 {
         font-size: 1.5rem;
+    }
+
+    .testimonio-avatar {
+        font-size: 2.5rem;
     }
 
 }

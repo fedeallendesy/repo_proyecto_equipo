@@ -36,10 +36,11 @@
 
     <nav id="main-nav">
         <a href="#inicio">Inicio</a>
+        <a href="#mapa-caliente">Puntos Calientes</a>
         <a href="#desigualdad">La desigualdad</a>
         <a href="#historias">Historias</a>
         <a href="#datos">Datos</a>
-        <a href="#mapa">Mapa</a>
+        <a href="#testimonios">Testimonios</a>
         <a href="#metodologia">Metodología</a>
         <a href="#creditos">Créditos</a>
     </nav>
@@ -66,7 +67,7 @@
             <h1>Santiago a destiempo</h1>
             <p>La espera de una micro en Santiago <b>no es igual para todos</b>
             ¿Por qué en algunos lugares pasan buses tan seguido y en otros no?</p>
-            <a href="#desigualdad" class="btn-primary">▶ INICIAR RECORRIDO</a>
+            <a href="#mapa-caliente" class="btn-primary">▶ INICIAR RECORRIDO</a>
         </div>
     </div>
 
@@ -74,6 +75,37 @@
     <div class="scroll-indicator">
         <span>Scroll para comenzar</span>
         <div class="scroll-arrow">↓</div>
+    </div>
+
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════════
+     SECCIÓN MAPA — PUNTOS CALIENTES
+     Ubicada inmediatamente después del hero.
+     Layout: ancho completo con título, texto y mapa grande.
+     ══════════════════════════════════════════════════════════ -->
+<section id="mapa-caliente" class="section section-mapa-full">
+
+    <div class="mapa-contenedor">
+        <span class="section-number">MAPA</span>
+        <h2 class="titulo-con-linea">PUNTOS CALIENTES DE LA PERIFERIA VS. ZONA ORIENTE</h2>
+        
+        <p class="mapa-descripcion">
+            El mapa interactivo muestra la realidad de los paraderos y los puntos de mayor afluencia. 
+            <span style="font-weight: bold;">Pasa el cursor sobre cada burbuja roja para revelar la afluencia total de pasajeros en movimiento.</span>
+        </p>
+
+        <div class="contenedor-mapa">
+            <iframe 
+                src="mapa_santiago.html" 
+                width="100%" 
+                height="600px" 
+                style="border: none; display: block; border-radius: 8px;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
     </div>
 
 </section>
@@ -206,78 +238,72 @@
 
 
 <!-- ══════════════════════════════════════════════════════════
-     SECCIÓN 02 — BRECHAS QUE ATRAVIESAN LA CIUDAD (MAPA)
-     Layout: 3 columnas (texto | señal | mapa).
-     Señalética: señal Solo Buses real (señal_solo_buses.png)
-     posicionada en el CENTRO entre el texto y el mapa,
-     actuando como separador visual entre las dos columnas.
+     SECCIÓN 02 — BRECHAS QUE ATRAVIESAN LA CIUDAD
+     Layout: Texto + Tabla a la izquierda | Visualización a ancho completo abajo
+     La visualización ocupa el ancho completo con el cuadro de lectura debajo.
      ══════════════════════════════════════════════════════════ -->
-<section id="mapa" class="section reverse seccion-señal-centro">
+<section id="demanda" class="section section-demanda-layout">
 
-    <!-- Columna izquierda: texto -->
-    <div class="section-content">
-        <span class="section-number">02</span>
-        <h2 class="titulo-con-linea">DEMANDA CONCENTRADA</h2>
-        <p>
-            El sistema RED responde en los <b>sectores de alta afluencia </b>de personas, donde la cantidad de personas es suficientemente alta para justificar frecuencias elevadas.
-        </p>
-        <p>
-            Maipú y Puente Alto concentran toda su demanda en la mañana: sus habitantes salen <b>antes de las 7:00</b>. Las Condes tiene su peak a las 18:00, cuando la gente regresa. Esta diferencia no es solo horaria: refleja quién depende del bus, quién tiene metro cerca y cuánto tiempo pierde en el camino.
-        </p>
+    <!-- Contenedor izquierdo: texto y tabla -->
+    <div class="seccion-02-izquierda">
+        <div class="section-content">
+            <span class="section-number">02</span>
+            <h2 class="titulo-con-linea">DEMANDA CONCENTRADA</h2>
+            <p>
+                El sistema RED responde en los <b>sectores de alta afluencia </b>de personas, donde la cantidad de personas es suficientemente alta para justificar frecuencias elevadas.
+            </p>
+            <p>
+                Maipú y Puente Alto concentran toda su demanda en la mañana: sus habitantes salen <b>antes de las 7:00</b>. Las Condes tiene su peak a las 18:00, cuando la gente regresa. Esta diferencia no es solo horaria: refleja quién depende del bus, quién tiene metro cerca y cuánto tiempo pierde en el camino.
+            </p>
+        </div>
 
-         <!-- Tabla comparativa de paraderos y demanda -->
+        <!-- Tabla comparativa de paraderos y demanda -->
         <table class="tabla-datos">
-                <thead>
-                    <tr>
-                        <th>Comuna</th>
-                        <th>Paraderos bus</th>
-                        <th>Subidas en punta</th>
-                        <th>Promedio por paradero</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Las Condes</td>
-                        <td>452</td>
-                        <td>83.597</td>
-                        <td class="stat-number">185</td>
-                    </tr>
-                    <tr>
-                        <td>Santiago</td>
-                        <td>576</td>
-                        <td>101.789</td>
-                        <td class="stat-number">177</td>
-                    </tr>
-                    <tr>
-                        <td>Maipú</td>
-                        <td>844</td>
-                        <td>80.450</td>
-                        <td class="stat-number">95</td>
-                    </tr>
-                    <tr>
-                        <td>Puente Alto</td>
-                        <td>934</td>
-                        <td>61.486</td>
-                        <td class="stat-number">66</td>
-                    </tr>
-                </tbody>
-            </table>
+            <thead>
+                <tr>
+                    <th>Comuna</th>
+                    <th>Paraderos bus</th>
+                    <th>Subidas en punta</th>
+                    <th>Promedio por paradero</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Las Condes</td>
+                    <td>452</td>
+                    <td>83.597</td>
+                    <td class="stat-number">185</td>
+                </tr>
+                <tr>
+                    <td>Santiago</td>
+                    <td>576</td>
+                    <td>101.789</td>
+                    <td class="stat-number">177</td>
+                </tr>
+                <tr>
+                    <td>Maipú</td>
+                    <td>844</td>
+                    <td>80.450</td>
+                    <td class="stat-number">95</td>
+                </tr>
+                <tr>
+                    <td>Puente Alto</td>
+                    <td>934</td>
+                    <td>61.486</td>
+                    <td class="stat-number">66</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
-    <!-- Columna central: señal Solo Buses como separador visual -->
-    <div class="señal-centro-wrapper">
-        <img src="señal_solo_buses.png" alt="Señal Solo Buses" class="señal-centro señal-solobus">
-    </div>
-
-    <!-- Columna derecha: mapa o imagen -->
-    <div class="section-image">
-        <!-- Reemplaza el src por tu mapa interactivo o imagen real -->
+    <!-- Contenedor derecho: visualización a ancho completo -->
+    <div class="seccion-02-derecha">
         <iframe
-        src="volumen pasajeros.png"
-        width="100%"
-        height="500"
-        style="border: none; border-radius: 8px;"
-        title="Gráfico demanda de buses"
+            src="volumen pasajeros.png"
+            width="100%"
+            height="500"
+            style="border: none; border-radius: 8px;"
+            title="Gráfico demanda de buses"
         ></iframe>
         
         <!-- Cuadro explicativo del gráfico -->
@@ -294,37 +320,9 @@
 </section>
 
 
-
-    <section id="mapa" class="section" style="padding: 40px 20px; max-width: 1000px; margin: 0 auto;">
-    
-    <h2 style="color: #FFCC00; font-family: 'Arial Narrow', sans-serif; text-transform: uppercase; margin-bottom: 15px; border-bottom: 2px solid #E3000F; padding-bottom: 8px;">
-        Puntos Calientes de la Periferia vs. Zona Oriente
-    </h2>
-    
-    <p style="color: #FFCC00; font-family: 'Montserrat', sans-serif; font-size: 1.1rem; margin-bottom: 25px; line-height: 1.6;">
-        El mapa interactivo muestra la realidad de los paraderos y los puntos de mayor afluencia. 
-        <span style="color: #FFCC00; font-weight: bold;">Pasa el cursor sobre cada burbuja roja para revelar la afluencia total de pasajeros en movimiento.</span>
-    </p>
-
-    <div class="contenedor-mapa" style="position: relative; width: 100%; border: 2px solid #444; border-radius: 8px; overflow: hidden; background-color: #1a1a1a; box-shadow: 0 4px 15px rgba(0,0,0,0.5);">
-        <iframe 
-            src="mapa_santiago.html" 
-            width="100%" 
-            height="550px" 
-            style="border: none; display: block;" 
-            allowfullscreen="" 
-            loading="lazy">
-        </iframe>
-    </div>
-
-</section>
-
-
 <!-- ══════════════════════════════════════════════════════════
      SECCIÓN 03 — HISTORIAS QUE IMPORTAN
-     Layout: 2 columnas (imagen | texto).
-     Señalética: señal de Velocidad Máxima 30 km/h (velocidad.png) 
-     en la primera columna. Tamaño controlado por .señal-velocidad en el CSS.
+     Layout: 2 columnas (video | texto).
      ══════════════════════════════════════════════════════════ -->
 <section id="historias" class="section seccion-tres-col">
 
@@ -345,6 +343,95 @@
             sectores céntricos, al estar distribuida en múltiples puntos, cada paradero no supera los
             umbrales que activan una mayor frecuencia de micros.
         </p>
+    </div>
+
+</section>
+
+<!-- ══════════════════════════════════════════════════════════
+     DIVISOR 3 — PASO DE CEBRA
+     Simula un cruce peatonal de Santiago visto desde arriba.
+     Fondo: asfalto gris oscuro (#2C2C2C).
+     Franjas: bloques blancos finos y alargados.
+     Bordes: líneas amarillas #FFDC4A (demarcación de calzada).
+     ══════════════════════════════════════════════════════════ -->
+<div class="divisor divisor-cebra" aria-hidden="true">
+    <div class="cebra-asfalto">
+        <div class="cebra-franja"></div>
+        <div class="cebra-franja"></div>
+        <div class="cebra-franja"></div>
+        <div class="cebra-franja"></div>
+        <div class="cebra-franja"></div>
+        <div class="cebra-franja"></div>
+        <div class="cebra-franja"></div>
+        <div class="cebra-franja"></div>
+        <div class="cebra-franja"></div>
+        <div class="cebra-franja"></div>
+        <div class="cebra-franja"></div>
+        <div class="cebra-franja"></div>
+        <div class="cebra-franja"></div>
+        <div class="cebra-franja"></div>
+        <div class="cebra-franja"></div>
+        <div class="cebra-franja"></div>
+        <div class="cebra-franja"></div>
+        <div class="cebra-franja"></div>
+        <div class="cebra-franja"></div>
+        <div class="cebra-franja"></div>
+        <div class="cebra-franja"></div>
+        <div class="cebra-franja"></div>
+        <div class="cebra-franja"></div>
+        <div class="cebra-franja"></div>
+        <div class="cebra-franja"></div>
+        <div class="cebra-franja"></div>
+        <div class="cebra-franja"></div>
+    </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════════════════
+     SECCIÓN 04 — TESTIMONIOS
+     Layout: 3 columnas con tarjetas de testimonios.
+     Personajes ficticios que el usuario puede cambiar después.
+     ══════════════════════════════════════════════════════════ -->
+<section id="testimonios" class="section section-testimonios">
+
+    <div class="testimonios-header">
+        <span class="section-number">04</span>
+        <h2 class="titulo-con-linea">HISTORIAS DE USUARIOS</h2>
+        <p class="testimonios-intro">Conoce las experiencias de quienes dependen del transporte público en Santiago.</p>
+    </div>
+
+    <div class="testimonios-grid">
+
+        <!-- Testimonio 1 -->
+        <div class="testimonio-card">
+            <div class="testimonio-avatar">👩‍💼</div>
+            <h3 class="testimonio-nombre">María González</h3>
+            <p class="testimonio-cargo">Trabajadora, Puente Alto</p>
+            <p class="testimonio-texto">
+                [Aquí va el testimonio de María. Describe tu experiencia usando el transporte público en Santiago.]
+            </p>
+        </div>
+
+        <!-- Testimonio 2 -->
+        <div class="testimonio-card">
+            <div class="testimonio-avatar">👨‍🏫</div>
+            <h3 class="testimonio-nombre">Carlos Mendoza</h3>
+            <p class="testimonio-cargo">Profesor, Maipú</p>
+            <p class="testimonio-texto">
+                [Aquí va el testimonio de Carlos. Describe tu experiencia usando el transporte público en Santiago.]
+            </p>
+        </div>
+
+        <!-- Testimonio 3 -->
+        <div class="testimonio-card">
+            <div class="testimonio-avatar">👩‍🎓</div>
+            <h3 class="testimonio-nombre">Sofía Rodríguez</h3>
+            <p class="testimonio-cargo">Estudiante, Las Condes</p>
+            <p class="testimonio-texto">
+                [Aquí va el testimonio de Sofía. Describe tu experiencia usando el transporte público en Santiago.]
+            </p>
+        </div>
+
     </div>
 
 </section>
