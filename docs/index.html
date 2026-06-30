@@ -37,11 +37,11 @@
     <nav id="main-nav">
         <a href="#inicio">Inicio</a>
         <a href="#mapa-caliente">Puntos Calientes</a>
-        <a href="#desigualdad">La desigualdad</a>
-        <a href="#historias">Historias</a>
-        <a href="#datos">Datos</a>
+        <a href="#desigualdad">Demanda Dispersa</a>
+        <a href="#demanda">Demanda Concentrada</a>
+        <a href="#historias">¿Por qué ocurre?</a>
         <a href="#testimonios">Testimonios</a>
-        <a href="#metodologia">Metodología</a>
+        <a href="#datos">Conclusión</a>
         <a href="#creditos">Créditos</a>
     </nav>
 
@@ -154,29 +154,16 @@
 
 
 <!-- ══════════════════════════════════════════════════════════
-     SECCIÓN 01 — ¿QUÉ ES LA DESIGUALDAD EN EL SISTEMA RED?
-     Layout: 2 columnas (imagen | texto + estadísticas).
-     Señalética: disco PARE (DISCO_PARE.png) en la columna central.
-     Tamaño controlado por .señal-pare en el CSS.
+     SECCIÓN 01 — DEMANDA DISPERSA
+     Layout: Tarjetas + Visualización abajo
      ══════════════════════════════════════════════════════════ -->
-<section id="desigualdad" class="section seccion-tres-col">
+<section id="desigualdad" class="section section-desigualdad-layout">
 
-    <!-- Columna derecha - Texto y datos -->
-    <div class="section-content">
-        <span class="section-number">01</span>
-        <h2 class="titulo-con-linea">DEMANDA DISPERSA</h2>
-        <p>
-            En el Sistema RED, 10 rutas periféricas tienen una diferencia de más de 10 veces entre la cantidad de buses que pasan en hora punta y los que pasan fuera en valle. En el caso más extremo, la ruta F10c pasa 6 veces por hora 
-            <b>solamente en hora punta</b>
-            , mientras que en horario Valle no pasa por el lugar.
-        </p>
-        <p> 
-            Esas rutas van a los sectores más alejados, donde el metro tampoco llega. Son exactamente el perfil de Puente Alto o los bordes de Maipú y donde fuera del peak el bus <b>casi desaparece</b>.
-        </p>
-
-        <!-- Tarjetas de estadísticas -->
-        <div class="stats">
-
+    <!-- Contenedor superior: tarjetas a la izquierda, texto a la derecha -->
+    <div class="desigualdad-superior">
+        
+        <!-- Columna izquierda: tarjetas de estadísticas -->
+        <div class="stats-columna">
             <div class="stat-card">
                 <span class="stat-icon">⏱</span>
                 <h3 class="stat-number">47,6x</h3>
@@ -194,30 +181,39 @@
                 <h3 class="stat-number">10 de 11</h3>
                 <p>Rutas con índice mayor a 10 son periféricas</p>
             </div>
+        </div>
 
+        <!-- Columna derecha: texto -->
+        <div class="section-content">
+            <span class="section-number">01</span>
+            <h2 class="titulo-con-linea">DEMANDA DISPERSA</h2>
+            <p>
+                En el Sistema RED, 10 rutas periféricas tienen una diferencia de más de 10 veces entre la cantidad de buses que pasan en hora punta y los que pasan fuera en valle. En el caso más extremo, la ruta F10c pasa 6 veces por hora 
+                <b>solamente en hora punta</b>
+                , mientras que en horario Valle no pasa por el lugar.
+            </p>
+            <p> 
+                Esas rutas van a los sectores más alejados, donde el metro tampoco llega. Son exactamente el perfil de Puente Alto o los bordes de Maipú y donde fuera del peak el bus <b>casi desaparece</b>.
+            </p>
         </div>
     </div>
-    
-    <!-- Columna central - Señal Pare -->
-    <div class="señal-centro-wrapper">
-        <img src="DISCO_PARE.png" alt="Señal PARE" class="señal-centro señal-pare">
-    </div>
-    <!-- Columna izquierda gráfico -->
-    <div>
-         <iframe
-         src="VISUALIZACION_1_MAKA.html"
-         width="100%"
-         height="500"
-         style="border: none; border-radius: 8px;"
-         title="Gráfico frecuencia punta vs valle"
-         ></iframe>
-         
+
+    <!-- Contenedor inferior: visualización a ancho completo -->
+    <div class="desigualdad-inferior">
+        <iframe
+            src="VISUALIZACION_1_MAKA.html"
+            width="100%"
+            height="500"
+            style="border: none; border-radius: 8px;"
+            title="Gráfico frecuencia punta vs valle"
+        ></iframe>
+        
         <!-- Cuadro explicativo del gráfico -->
         <div class="cuadro-lectura">
             <p><strong>¿Cómo leer este gráfico?</strong></p>
             <ul>
                 <li>Cada punto es una ruta del Sistema RED.</li>
-                <li>El eje vertical muestra cuántos buses pasan por hora en horario punta ().</li>
+                <li>El eje vertical muestra cuántos buses pasan por hora en horario punta.</li>
                 <li>El eje horizontal muestra lo mismo en horario valle (fuera del peak).</li>
             </ul>
         </div>
