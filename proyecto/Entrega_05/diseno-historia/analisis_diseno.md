@@ -4,16 +4,26 @@
 
 La estructura narrativa se ha definido en torno a una secuencia de preguntas y respuestas, buscando guiar al usuario a través de un descubrimiento progresivo de la problemática. Esta se compone de cuatro momentos:
 
-### 1 - SANTIAGO A DESTIEMPO:
+### SANTIAGO A DESTIEMPO:
 - Establece la "tensión central" y la pregunta inicial, para que el usuario se meta en el tema del reportaje que es el transporte público en Santiago y presenta la hipótesis de la demanda dispersa.
 
-### 2. DEMANDA CONCENTRADA: 
+### PUNTOS CALIENTES:
+- Quisimos iniciar con un mapa para entender cuáles son las zonas periféricas, central y semi centrales. Además, es mucho más amigable para los lectores ver un mapa que alguna de las visualizaciones que vienen después.
+
+### 01. DEMANDA CONCENTRADA: 
 - Contrapone la realidad anterior, porque muestra cómo la demanda dispersa en ciertas comunas genera brechas en el servicio y tiempos de espera prolongados, justificando el concepto de "Santiago a dos velocidades".
 
-### 3. DEMANDA INVISIBLE: 
+### 02. DEMANDA INVISIBLE: 
 - Muestra la eficiencia del sistema RED en zonas con alta demanda, donde la alta afluencia de pasajeros en pocos puntos facilita una respuesta eficaz del sistema.
 
-### 4. SANTIAGO A DOS VELOCIDADES (Conclusión)
+### 03. ¿POR QUÉ OCURRE ESTO?: 
+- Realizamos esta pregunta porque es quizás lo que se podría cuestionar el lector que ve los datos de antes.
+
+### 04. TESTIMONIOS: 
+- A pesar de que en el resto del reportaje se muestran estos testimonios aquí dejamos el extracto más interesante de cada uno. Lo anterior para ir finalizando el reportaje sin perder este lado humano.
+
+
+### SANTIAGO A DOS VELOCIDADES (Conclusión)
 - Sintetiza los hallazgos y propone una reflexión sobre estos. Además de despejar los prejuicios o estigmas que el usuario puede tener del transporte público metropolitano.
 
 ## Recorrido del Usuario en la Página
@@ -22,7 +32,7 @@ El recorrido del usuario está diseñado para ser lineal y guiado usa el scroll 
 
 ## Comentarios sobre la crónica en general
 
-El estilo narrativo adoptado es urbano y documental, buscando una inmersión del lector en la realidad de los usuarios del transporte público en la periferia. La redacción se esfuerza por ser directa, empática y periodística, utilizando un lenguaje que visibiliza la experiencia humana detrás de los datos.
+El estilo narrativo adoptado es urbano y documental, buscando una inmersión del lector en la realidad de los usuarios del transporte público en la periferia. La redacción se esfuerza por ser empática y periodística, usando un lenguaje que visibiliza la experiencia humana detrás de los datos.
 
 ### Titular ("Santiago a Destiempo"): 
 Busca generar intriga y empatía desde el primer momento, planteando una pregunta universal sobre la eficiencia del sistema.
