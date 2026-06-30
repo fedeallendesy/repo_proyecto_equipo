@@ -48,7 +48,6 @@ h1, h2, h3, h4 {
     color: #111;
 }
 
-/* Números y datos estadísticos — Montserrat Bold */
 .stat-number {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -93,7 +92,6 @@ h1, h2, h3, h4 {
     transition: background 0.4s, box-shadow 0.4s;
 }
 
-/* Estado al hacer scroll — fondo oscuro */
 .navbar.scrolled {
     background: #2C2C2C;
     box-shadow: 0 2px 20px rgba(0,0,0,0.4);
@@ -108,7 +106,6 @@ h1, h2, h3, h4 {
     color: #fff;
 }
 
-/* Nombre del proyecto en el navbar */
 .logo span {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -117,7 +114,6 @@ h1, h2, h3, h4 {
     color: #111;
 }
 
-/* Links de navegación */
 nav {
     display: flex;
     gap: 28px;
@@ -137,7 +133,6 @@ nav a:hover {
     color: #CC1F1F;
 }
 
-/* Botón hamburguesa — oculto en desktop, visible en móvil */
 .menu-btn {
     background: none;
     border: none;
@@ -148,7 +143,6 @@ nav a:hover {
     transition: color 0.2s;
 }
 
-/* Menú desplegable en móvil cuando tiene clase .active */
 nav.active {
     display: flex;
     flex-direction: column;
@@ -184,10 +178,9 @@ nav.active {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: #f0ede8; /* fallback si no hay imagen */
+    background-color: #f0ede8;
 }
 
-/* Capa blanca semitransparente sobre la imagen de fondo */
 .hero-overlay {
     position: absolute;
     inset: 0;
@@ -211,7 +204,6 @@ nav.active {
     margin-bottom: 8px;
 }
 
-/* Línea amarilla decorativa bajo el h1 del hero */
 .hero h1::after {
     content: '';
     display: block;
@@ -308,7 +300,7 @@ nav.active {
 
 
 /* ══════════════════════════════════════════════════════════
-   SECCIÓN MAPA — PUNTOS CALIENTES (ANCHO COMPLETO)
+   SECCIÓN MAPA — PUNTOS CALIENTES
    Layout: ancho completo con título, descripción y mapa grande.
    ══════════════════════════════════════════════════════════ */
 
@@ -353,11 +345,6 @@ nav.active {
    Fondo: asfalto gris oscuro (#2C2C2C).
    Bordes: líneas amarillas #FFDC4A (::before y ::after).
    Franjas: bloques blancos finos y alargados.
-
-   Para ajustar:
-     height de .cebra-asfalto → altura total del asfalto
-     max-width de .cebra-franja → grosor de cada franja blanca
-     margin de .cebra-franja → separación entre franjas
    ══════════════════════════════════════════════════════════ */
 
 .divisor-cebra {
@@ -367,7 +354,6 @@ nav.active {
     overflow: hidden;
 }
 
-/* Líneas amarillas en los bordes superior e inferior */
 .divisor-cebra::before,
 .divisor-cebra::after {
     content: '';
@@ -381,22 +367,20 @@ nav.active {
 .divisor-cebra::before { top: 0; }
 .divisor-cebra::after  { bottom: 0; }
 
-/* Contenedor de las franjas blancas */
 .cebra-asfalto {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: stretch;
-    height: 160px;   /* ← altura del asfalto. Auméntala para más alto */
+    height: 160px;
     padding: 20px 0;
 }
 
-/* Cada franja blanca */
 .cebra-franja {
     flex: 1;
-    max-width: 28px;  /* ← grosor de la franja. Más bajo = más fina */
+    max-width: 28px;
     background: #fff;
-    margin: 0 14px;   /* ← separación entre franjas */
+    margin: 0 14px;
     border-radius: 0px;
 }
 
@@ -405,7 +389,6 @@ nav.active {
    DIVISOR 2 — CARRIL SOLO BUS
    Fondo: asfalto oscuro (#2C2C2C).
    Bordes: líneas amarillas continuas (izq y der del carril).
-   Texto: "SOLO" y "BUS" en amarillo, como pintura en calzada.
    ══════════════════════════════════════════════════════════ */
 
 .divisor-solobus {
@@ -422,39 +405,37 @@ nav.active {
     background: repeating-linear-gradient(
         to right,
         #FFDC4A 0px,
-        #FFDC4A 24px,     /* segmento amarillo */
+        #FFDC4A 24px,
         transparent 24px,
-        transparent 48px  /* espacio vacío */
+        transparent 48px
     );
 }
 
-/* Franja continua en el borde SUPERIOR */
 .divisor-solobus::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    height: 6px;          /* ← grosor de la franja superior */
+    height: 6px;
     background: #FFDC4A;
 }
 
-/* Franja continua en el borde INFERIOR */
 .divisor-solobus::after {
     content: '';
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    height: 6px;          /* ← grosor de la franja inferior */
+    height: 6px;
     background: #FFDC4A;
 }
+
 
 /* ══════════════════════════════════════════════════════════
    SECCIONES DE CONTENIDO (01, 02, 03)
    Grid de 2 columnas por defecto.
    La sección 02 usa layout especial (texto+tabla | visualización).
-   position: relative es necesario para las señaléticas laterales.
    La animación de entrada la activa el JS con la clase .show.
    ══════════════════════════════════════════════════════════ */
 
@@ -470,13 +451,11 @@ nav.active {
     transition: opacity 0.9s ease, transform 0.9s ease;
 }
 
-/* Clase que activa la animación de entrada (añadida por JS) */
 .section.show {
     opacity: 1;
     transform: translateY(0);
 }
 
-/* Fondo alterno para la sección 02 */
 .reverse {
     background: #F2F2F0;
 }
@@ -487,7 +466,6 @@ nav.active {
     box-shadow: 0 6px 30px rgba(0,0,0,0.08);
 }
 
-/* Etiqueta de número de sección — fondo amarillo */
 .section-number {
     display: inline-block;
     background: #FFDC4A;
@@ -512,123 +490,10 @@ nav.active {
     max-width: 480px;
 }
 
-/* ══════════════════════════════════════════════════════════
-   SECCIÓN 02 — LAYOUT ESPECIAL
-   Texto + Tabla arriba en 2 columnas | Visualización abajo a ancho completo
-   ══════════════════════════════════════════════════════════ */
-
-.section-demanda-layout {
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-    padding: 110px 6%;
-    background: #F2F2F0;
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.9s ease, transform 0.9s ease;
-}
-
-.section-demanda-layout.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.demanda-superior {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    align-items: flex-start;
-}
-
-.demanda-inferior {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-}
-
 
 /* ══════════════════════════════════════════════════════════
-   TARJETAS DE ESTADÍSTICAS (sección 01)
-   Bordes amarillos, esquinas rectas (estilo señalética).
-   Los números usan .stat-number → Montserrat Bold, rojo.
-   ══════════════════════════════════════════════════════════ */
-
-.stats {
-    display: flex;
-    gap: 14px;
-    margin-top: 10px;
-    flex-wrap: wrap;
-}
-
-.stat-card {
-    border: 2px solid #FFDC4A;
-    padding: 18px 16px;
-    border-radius: 0; /* esquinas rectas, estilo señalética */
-    flex: 1;
-    min-width: 110px;
-    background: #fff;
-    position: relative;
-    transition: box-shadow 0.3s, transform 0.3s;
-}
-
-/* Barra amarilla superior de la tarjeta */
-.stat-card::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%;
-    height: 4px;
-    background: #FFDC4A;
-}
-
-.stat-card:hover {
-    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
-    transform: translateY(-3px);
-}
-
-.stat-icon {
-    display: block;
-    font-size: 1.2rem;
-    margin-bottom: 8px;
-}
-
-.stat-card p {
-    font-size: 0.82rem;
-    color: #666;
-    line-height: 1.4;
-    margin-bottom: 0;
-}
-
-
-/* ══════════════════════════════════════════════════════════
-   SEÑALÉTICAS REALES — IMÁGENES PNG
-DISCO_PARE.png        → sección 01, columna central
-señal_solo_buses.png  → sección 02, columna central
-velocidad.png         → sección 03, columna central
-
-Para cambiar el tamaño de cada señal individualmente:
-  .señal-pare      → tamaño del disco PARE
-  .señal-solobus   → tamaño de la señal Solo Buses
-  .señal-velocidad → tamaño de la señal de velocidad
-   ══════════════════════════════════════════════════════════ */
-
-
-/* ── Señales laterales (PARE y Velocidad) ─────────────── */
-
-
-/* ── Señal central (Solo Buses) ───────────────────────── */
-
-/* La sección 02 usa 3 columnas: texto | señal | imagen */
-.seccion-señal-centro,
-.seccion-tres-col {
-    grid-template-columns: 1fr auto 1fr;
-    gap: 40px;
-}
-
-/* ══════════════════════════════════════════════════════════
-   SECCIÓN 01 — LAYOUT ESPECIAL
-   Tarjetas a la izquierda | Texto a la derecha | Visualización abajo
+   SECCIÓN 01 — DEMANDA DISPERSA
+   Layout: Tarjetas a la izquierda | Texto a la derecha | Visualización abajo
    ══════════════════════════════════════════════════════════ */
 
 .section-desigualdad-layout {
@@ -667,7 +532,218 @@ Para cambiar el tamaño de cada señal individualmente:
 }
 
 
-/* Contenedor centrado de la señal */
+/* ══════════════════════════════════════════════════════════
+   TARJETAS DE ESTADÍSTICAS
+   Bordes amarillos, esquinas rectas (estilo señalética).
+   Los números usan .stat-number → Montserrat Bold, rojo.
+   ══════════════════════════════════════════════════════════ */
+
+.stat-card {
+    border: 2px solid #FFDC4A;
+    padding: 18px 16px;
+    border-radius: 0;
+    flex: 1;
+    min-width: 110px;
+    background: #fff;
+    position: relative;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.stat-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 4px;
+    background: #FFDC4A;
+}
+
+.stat-card:hover {
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    transform: translateY(-3px);
+}
+
+.stat-icon {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.stat-card p {
+    font-size: 0.82rem;
+    color: #666;
+    line-height: 1.4;
+    margin-bottom: 0;
+}
+
+
+/* ══════════════════════════════════════════════════════════
+   SECCIÓN 02 — DEMANDA CONCENTRADA
+   Layout: Texto + Tabla arriba en 2 columnas | Visualización abajo a ancho completo
+   ══════════════════════════════════════════════════════════ */
+
+.section-demanda-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 110px 6%;
+    background: #F2F2F0;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.section-demanda-layout.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.demanda-superior {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+.demanda-inferior {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+
+/* ══════════════════════════════════════════════════════════
+   TABLA COMPARATIVA DE COMUNAS
+   ══════════════════════════════════════════════════════════ */
+
+.tabla-datos {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.88rem;
+    margin-top: 24px;
+}
+
+.tabla-datos th {
+    background: #1a1a1a;
+    color: #FFDC4A;
+    padding: 10px 14px;
+    text-align: left;
+    font-weight: 700;
+}
+
+.tabla-datos td {
+    padding: 10px 14px;
+    border-bottom: 1px solid #e0e0e0;
+    color: #333;
+}
+
+.tabla-datos tr:hover td {
+    background: #f9f6ef;
+}
+
+.tabla-datos .stat-number {
+    font-weight: 700;
+    color: #CC1F1F;
+}
+
+
+/* ══════════════════════════════════════════════════════════
+   CUADRO EXPLICATIVO — ¿CÓMO LEER EL GRÁFICO?
+   ══════════════════════════════════════════════════════════ */
+
+.cuadro-lectura {
+    background: #f5f2eb;
+    border-left: 4px solid #FFDC4A;
+    border-radius: 6px;
+    padding: 16px 20px;
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.88rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+.cuadro-lectura strong {
+    font-weight: 700;
+    color: #1a1a1a;
+    display: block;
+    margin-bottom: 6px;
+}
+
+
+/* ══════════════════════════════════════════════════════════
+   VIÑETAS ESTILIZADAS
+   ══════════════════════════════════════════════════════════ */
+
+.section-content ul,
+.cuadro-lectura ul {
+    list-style: none;
+    padding: 0;
+    margin: 16px 0;
+}
+
+.section-content ul li,
+.cuadro-lectura ul li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #555;
+    padding: 6px 0 6px 24px;
+    position: relative;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.section-content ul li::before,
+.cuadro-lectura ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background: #FFDC4A;
+    border-radius: 2px;
+}
+
+
+/* ══════════════════════════════════════════════════════════
+   SECCIÓN 03 — ¿POR QUÉ OCURRE ESTO?
+   Layout: 2 columnas (video | texto).
+   ══════════════════════════════════════════════════════════ */
+
+#historias {
+    grid-template-columns: 1.2fr 1fr;
+    gap: 48px;
+}
+
+#historias .section-image {
+    width: 100%;
+}
+
+#historias video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 6px 30px rgba(0,0,0,0.15);
+}
+
+
+/* ══════════════════════════════════════════════════════════
+   SEÑALÉTICAS — IMÁGENES PNG
+   DISCO_PARE.png        → sección 01, columna central
+   señal_solo_buses.png  → sección 02, columna central
+   velocidad.png         → sección 03, columna central
+   ══════════════════════════════════════════════════════════ */
+
+.seccion-señal-centro,
+.seccion-tres-col {
+    grid-template-columns: 1fr auto 1fr;
+    gap: 40px;
+}
+
 .señal-centro-wrapper {
     display: flex;
     flex-direction: column;
@@ -688,7 +764,6 @@ Para cambiar el tamaño de cada señal individualmente:
     filter: drop-shadow(0 8px 22px rgba(0,0,0,0.28));
 }
 
-/* Tamaños individuales — ajustar números libremente */
 .señal-pare      { width: 200px; }
 .señal-solobus   { width: 120px; }
 .señal-velocidad { width: 150px; }
@@ -745,7 +820,6 @@ Para cambiar el tamaño de cada señal individualmente:
     position: relative;
 }
 
-/* Barra amarilla superior */
 .testimonio-card::before {
     content: '';
     position: absolute;
@@ -800,7 +874,6 @@ Para cambiar el tamaño de cada señal individualmente:
    Imagen de fondo con texto reflexivo posicionado a la derecha.
    IMAGEN DE FONDO: reemplaza "ilustracion_cierre_gris.png"
    por el nombre de tu archivo de ilustración de cierre.
-   El cuadro blanco tiene borde izquierdo amarillo #FFDC4A.
    ══════════════════════════════════════════════════════════ */
 
 .closing-image {
@@ -809,7 +882,7 @@ Para cambiar el tamaño de cada señal individualmente:
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: #e8e5e0; /* fallback si no hay imagen */
+    background-color: #e8e5e0;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -822,7 +895,7 @@ Para cambiar el tamaño de cada señal individualmente:
     max-width: 520px;
     padding: 40px 36px;
     background: rgba(255,255,255,0.94);
-    border-left: 6px solid #FFDC4A; /* acento amarillo */
+    border-left: 6px solid #FFDC4A;
     box-shadow: 0 6px 30px rgba(0,0,0,0.12);
 }
 
@@ -911,105 +984,6 @@ footer .btn-secondary:hover {
     color: #FFDC4A;
 }
 
-/* Cuadro explicativo de cómo leer el gráfico */
-.cuadro-lectura {
-    background: #f5f2eb;
-    border-left: 4px solid #FFDC4A;
-    border-radius: 6px;
-    padding: 16px 20px;
-    margin-top: 20px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 0.88rem;
-    color: #444;
-    line-height: 1.6;
-}
-
-.cuadro-lectura strong {
-    font-weight: 700;
-    color: #1a1a1a;
-    display: block;
-    margin-bottom: 6px;
-}
-
-/* Tabla comparativa de comunas */
-.tabla-datos {
-    width: 100%;
-    border-collapse: collapse;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 0.88rem;
-    margin-top: 24px;
-}
-
-.tabla-datos th {
-    background: #1a1a1a;
-    color: #FFDC4A;
-    padding: 10px 14px;
-    text-align: left;
-    font-weight: 700;
-}
-
-.tabla-datos td {
-    padding: 10px 14px;
-    border-bottom: 1px solid #e0e0e0;
-    color: #333;
-}
-
-.tabla-datos tr:hover td {
-    background: #f9f6ef;
-}
-
-.tabla-datos .stat-number {
-    font-weight: 700;
-    color: #CC1F1F;
-}
-
-/* Viñetas estilizadas */
-.section-content ul,
-.cuadro-lectura ul {
-    list-style: none;
-    padding: 0;
-    margin: 16px 0;
-}
-.section-content ul li,
-.cuadro-lectura ul li {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-    color: #555;
-    padding: 6px 0 6px 24px;
-    position: relative;
-    border-bottom: 1px solid #e8e8e8;
-}
-.section-content ul li::before,
-.cuadro-lectura ul li::before {
-
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 10px;
-    height: 10px;
-    background: #FFDC4A;
-    border-radius: 2px;
-}
-
-/* ══════════════════════════════════════════════════════════
-   SECCIÓN 03 — Grid de 2 columnas para el video
-   ══════════════════════════════════════════════════════════ */
-#historias {
-    grid-template-columns: 1.2fr 1fr;
-    gap: 48px;
-}
-#historias .section-image {
-    width: 100%;
-}
-#historias video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 12px;
-    box-shadow: 0 6px 30px rgba(0,0,0,0.15);
-}
 
 /* ══════════════════════════════════════════════════════════
    RESPONSIVE — PANTALLAS MEDIANAS Y PEQUEÑAS (máx. 900px)
@@ -1017,7 +991,7 @@ footer .btn-secondary:hover {
 
 @media (max-width: 900px) {
 
-    /* Navbar */
+    /* NAVBAR */
     .navbar {
         padding: 16px 24px;
     }
@@ -1030,7 +1004,7 @@ footer .btn-secondary:hover {
         display: none;
     }
 
-    /* Hero */
+    /* HERO */
     .hero-content {
         text-align: center;
         width: 100%;
@@ -1052,51 +1026,29 @@ footer .btn-secondary:hover {
         font-size: 2.4rem;
     }
 
-    /* Centrar la línea amarilla bajo el h1 */
     .hero h1::after {
         margin-left: auto;
         margin-right: auto;
     }
 
-    .section-demanda-layout {
-        gap: 40px;
-        padding: 70px 6%;
-    }
-    
-    .demanda-superior {
-        grid-template-columns: 1fr;
-        gap: 30px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    /* Orden en móvil: texto primero, luego tarjetas */
-    .demanda-superior .section-content {
-        order: 1;
-    }
-
-    .demanda-superior .stats-columna {
-        order: 2;
-    }
-
-    /* Visualización a ancho completo */
-    .desigualdad-inferior {
-        width: 100vw;
-        margin-left: calc(-50vw + 50%);
-        padding: 0 6%;
-    }
-
-    /* Secciones — 1 columna */
+    /* SECCIONES GENERALES */
     .section {
         grid-template-columns: 1fr;
         padding: 70px 6%;
         gap: 36px;
     }
 
-    /* SECCIÓN 01 - Demanda Dispersa */
+    /* SECCIÓN MAPA */
+    .section-mapa-full {
+        padding: 70px 6%;
+    }
+
+    /* SECCIÓN 01 - DEMANDA DISPERSA */
     .section-desigualdad-layout {
         gap: 40px;
-        padding: 70px 6%;
+        padding: 70px 6% !important;
+        display: flex;
+        flex-direction: column;
     }
     
     .desigualdad-superior {
@@ -1106,7 +1058,6 @@ footer .btn-secondary:hover {
         flex-direction: column;
     }
 
-    /* Orden en móvil: texto primero, luego tarjetas */
     .desigualdad-superior .section-content {
         order: 1;
     }
@@ -1115,17 +1066,17 @@ footer .btn-secondary:hover {
         order: 2;
     }
 
-    /* Visualización a ancho completo */
     .desigualdad-inferior {
-        width: 100vw;
-        margin-left: calc(-50vw + 50%);
-        padding: 0 6%;
+        width: 100%;
+        padding: 0 !important;
+        margin: 0 !important;
+        order: 3;
     }
 
-    /* SECCIÓN 02 - Demanda Concentrada */
+    /* SECCIÓN 02 - DEMANDA CONCENTRADA */
     .section-demanda-layout {
         gap: 40px;
-        padding: 70px 6%;
+        padding: 70px 6% !important;
         display: flex;
         flex-direction: column;
     }
@@ -1137,12 +1088,6 @@ footer .btn-secondary:hover {
         flex-direction: column;
     }
 
-    .demanda-inferior {
-        width: 100%;
-        padding: 0;
-    }
-
-    /* Orden en móvil: texto, tabla, visualización, cuadro */
     .demanda-superior .section-content {
         order: 1;
     }
@@ -1154,7 +1099,8 @@ footer .btn-secondary:hover {
     .demanda-inferior {
         order: 3;
         width: 100%;
-        padding: 0;
+        padding: 0 !important;
+        margin: 0 !important;
     }
 
     .demanda-inferior iframe {
@@ -1162,24 +1108,25 @@ footer .btn-secondary:hover {
     }
 
     .demanda-inferior .cuadro-lectura {
-        order: 4;
+        margin-top: 20px;
     }
 
-
-    /* En .reverse, el contenido va primero */
-    .reverse .section-content { order: 1; }
-    .reverse .section-image   { order: 2; }
-
-    /* Estadísticas en columna */
-    .stats {
-        flex-direction: column;
-    }
-
-    /* Señal central (Solo Buses): sección vuelve a 1 columna */
-    .seccion-señal-centro {
+    /* SECCIÓN 03 - ¿POR QUÉ OCURRE? */
+    #historias {
         grid-template-columns: 1fr;
+        gap: 36px;
+    }
+    
+    #historias .section-content {
+        order: 1;
+    }
+    
+    #historias .section-image {
+        order: 2;
     }
 
+    /* SEÑALÉTICAS */
+    .seccion-señal-centro,
     .seccion-tres-col {
         grid-template-columns: 1fr;
     }
@@ -1198,31 +1145,7 @@ footer .btn-secondary:hover {
     .seccion-tres-col .section-content     { order: 1; }
     .seccion-tres-col .section-image       { order: 2; }
 
-    /* SECCIÓN 03 - ¿Por qué ocurre? */
-    #historias {
-        grid-template-columns: 1fr;
-        gap: 36px;
-    }
-    
-    #historias .section-content {
-        order: 1;
-    }
-    
-    #historias .section-image {
-        order: 2;
-    }
-
-    /* Sección mapa */
-    .section-mapa-full {
-        padding: 70px 6%;
-    }
-
-    /* Sección 2 - Demanda Concentrada */
-    .section-demanda-layout {
-        padding: 70px 6%;
-    }
-
-    /* Sección testimonios */
+    /* SECCIÓN 04 - TESTIMONIOS */
     .section-testimonios {
         padding: 70px 6%;
     }
@@ -1232,7 +1155,7 @@ footer .btn-secondary:hover {
         gap: 30px;
     }
 
-    /* Cierre — cuadro a ancho completo */
+    /* SECCIÓN CIERRE */
     .closing-image {
         justify-content: center;
         padding: 60px 6%;
@@ -1244,7 +1167,7 @@ footer .btn-secondary:hover {
         padding: 32px 22px;
     }
 
-    /* Divisor cebra más compacto */
+    /* DIVISORES */
     .cebra-asfalto {
         height: 110px;
         padding: 14px 0;
@@ -1255,12 +1178,11 @@ footer .btn-secondary:hover {
         margin: 0 9px;
     }
 
-    /* Carril solo bus más compacto */
     .divisor-solobus {
         height: 110px;
     }
 
-    /* Footer */
+    /* FOOTER */
     footer {
         padding: 24px;
         flex-direction: column;
