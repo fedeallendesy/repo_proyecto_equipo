@@ -1,0 +1,23 @@
+# Ficha Técnica: CONSOLIDADO_VISUALIZACION_MAKA.csv
+
+**Descripción general:** Archivo consolidado de oferta que detalla la planificación de frecuencias y capacidad de las líneas de buses a lo largo del día, con especial enfoque en los contrastes de horarios punta y valle.
+
+*   **Formato:** `.csv`
+*   **Delimitador:** Punto y coma (`;`)
+*   **Codificación:** `Latin-1` o `ISO-8859-1`
+*   **Dimensiones:** 703 filas × 73 columnas
+
+## Diccionario de Variables Principales
+
+| Columna | Tipo de Dato | Descripción |
+| :--- | :--- | :--- |
+| `Unidad de Negocio` | Integer | Número de la unidad operadora del recorrido. |
+| `Código TS` / `Código Usuario` | String | Identificador alfanumérico del recorrido (Ej: 1329c). |
+| `Sentido` | String | Dirección del recorrido (Ej: Ida, Ret). |
+| `Columnas Horarias` | Mixto | Matrices con valores de frecuencia y capacidad programada en cortes horarios específicos (Ej: 0:59, 5:29). |
+| `FREC_PUNTA` | Float | Frecuencia promedio asignada en horario de mayor demanda. |
+| `FREC_VALLE` | Float | Frecuencia promedio asignada en horario de menor demanda. |
+| `INDICE_PUNTA_VALLE` | Float | Ratio de variación entre el horario punta y el horario valle. |
+| `CAP_POR_BUS_PUNTA` | String | Capacidad teórica asignada al vehículo en el horario peak. |
+| `TIPO_ZONA` | String | Clasificación urbana de la línea (Ej: Periférica). |
+
