@@ -18,6 +18,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Segment+A&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 </head>
 <body>
 
@@ -340,6 +343,27 @@
             </ul>
         </div>
     </div>
+
+    <div class="COMPARACIÓN CON OTRAS COMUNAS">
+        <iframe
+            src="grafico_contraste_final.html"
+            width="100%"
+            height="500"
+            style="border: none; border-radius: 8px;"
+            title="Gráfico demanda de buses"
+        ></iframe>
+        
+        <!-- Cuadro explicativo del gráfico -->
+        <div class="cuadro-lectura">
+            <p><strong>¿Cómo leer este gráfico?</strong></p>
+            <ul>
+                <li>Cada línea representa una comuna.</li>
+                <li>El eje horizontal es la hora del día y el eje vertical muestra el promedio de subidas por hora.</li> 
+                <li>Pasa el cursor sobre las líneas para ver los datos exactos de cada hora.</li>
+            </ul>
+        </div>
+    </div>
+    
 
 </section>
 
