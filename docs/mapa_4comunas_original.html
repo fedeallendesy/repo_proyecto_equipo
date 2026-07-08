@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c01c868e7453a31f31bd8feaf4c1f231 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c01c868e7453a31f31bd8feaf4c1f231" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c01c868e7453a31f31bd8feaf4c1f231 = L.map(
+                "map_c01c868e7453a31f31bd8feaf4c1f231",
+                {
+                    center: [-33.4489, -70.6693],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_60ca361d76671a23aab35970d90f4aea = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_60ca361d76671a23aab35970d90f4aea.addTo(map_c01c868e7453a31f31bd8feaf4c1f231);
+        
+    
+            var circle_marker_910b13beac0fd374c6aece34e455c3c8 = L.circleMarker(
+                [-33.4166, -70.5833],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 35.62038068297418, "stroke": true, "weight": 2}
+            ).addTo(map_c01c868e7453a31f31bd8feaf4c1f231);
+        
+    
+            circle_marker_910b13beac0fd374c6aece34e455c3c8.bindTooltip(
+                `<div>
+                     <div style='font-family: Arial, sans-serif; font-size: 13px;'><b>Comuna:</b> LAS CONDES<br><b>Pasajeros Totales (Buses):</b> 198,251</div>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_27fc12614da7fa3385dbd52a70231223 = L.circleMarker(
+                [-33.5166, -70.7666],
+                {"bubblingMouseEvents": true, "color": "#ff7f0e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 36.13213085330009, "stroke": true, "weight": 2}
+            ).addTo(map_c01c868e7453a31f31bd8feaf4c1f231);
+        
+    
+            circle_marker_27fc12614da7fa3385dbd52a70231223.bindTooltip(
+                `<div>
+                     <div style='font-family: Arial, sans-serif; font-size: 13px;'><b>Comuna:</b> MAIPÚ<br><b>Pasajeros Totales (Buses):</b> 203,989</div>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5e98553b967959cc1cc9fb37fac307a4 = L.circleMarker(
+                [-33.6166, -70.5833],
+                {"bubblingMouseEvents": true, "color": "#d62728", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d62728", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 31.32218127781014, "stroke": true, "weight": 2}
+            ).addTo(map_c01c868e7453a31f31bd8feaf4c1f231);
+        
+    
+            circle_marker_5e98553b967959cc1cc9fb37fac307a4.bindTooltip(
+                `<div>
+                     <div style='font-family: Arial, sans-serif; font-size: 13px;'><b>Comuna:</b> PUENTE ALTO<br><b>Pasajeros Totales (Buses):</b> 153,293</div>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f42d87a1c92b2361bc1fdb611e7ef130 = L.circleMarker(
+                [-33.4372, -70.6506],
+                {"bubblingMouseEvents": true, "color": "#007BFF", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#007BFF", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 39.26699581073143, "stroke": true, "weight": 2}
+            ).addTo(map_c01c868e7453a31f31bd8feaf4c1f231);
+        
+    
+            circle_marker_f42d87a1c92b2361bc1fdb611e7ef130.bindTooltip(
+                `<div>
+                     <div style='font-family: Arial, sans-serif; font-size: 13px;'><b>Comuna:</b> SANTIAGO<br><b>Pasajeros Totales (Buses):</b> 240,921</div>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
