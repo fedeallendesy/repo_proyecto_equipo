@@ -318,6 +318,21 @@ nav.active {
     transform: translateY(0);
 }
 
+.section-mapa-layout {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr; /* Le da un poco más de ancho al mapa que al texto */
+    gap: 60px;
+    align-items: flex-start; /* Obliga a que la columna derecha parta a la misma altura que el título izquierdo */
+    padding: 110px 6%;
+}
+
+.texto-sistema-red p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 16px;
+}
+
 .mapa-contenedor {
     width: 100%;
 }
@@ -984,6 +999,64 @@ footer .btn-secondary:hover {
     color: #FFDC4A;
 }
 
+/* ══════════════════════════════════════════════════════════
+   SECCIÓN — EL ESPEJISMO DE LAS SOLUCIONES FÁCILES
+   Sobreescribe el grid de .section para un flujo vertical
+   ══════════════════════════════════════════════════════════ */
+.section-discusion {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Separación vertical entre bloques */
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
+.discusion-header p {
+    width: 100%;
+    max-width: 100%; /* Evita que el párrafo se corte a la mitad */
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #333;
+}
+
+.discusion-imagen img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1); /* Toque sutil de profundidad */
+}
+
+/* Grilla para poner los dos mitos lado a lado */
+.discusion-mitos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    width: 100%;
+}
+
+.mito-card {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-left: 5px solid #FFDC4A; /* Usando tu variable de amarillo */
+    border-radius: 0 8px 8px 0;
+}
+
+.mito-card h4 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #111;
+    text-transform: uppercase;
+    font-size: 0.95rem;
+}
+
+.mito-card p {
+    margin-bottom: 0;
+    color: #555;
+    line-height: 1.6;
+    max-width: 100%;
+}
+
 
 /* ══════════════════════════════════════════════════════════
    RESPONSIVE — PANTALLAS MEDIANAS Y PEQUEÑAS (máx. 900px)
@@ -1109,6 +1182,16 @@ footer .btn-secondary:hover {
 
     .demanda-inferior .cuadro-lectura {
         margin-top: 20px;
+    }
+
+    /* SECCIÓN SOLUCIONES FÁCILES - Ajuste Móvil */
+    .section-discusion {
+        padding: 70px 6%;
+    }
+    
+    .discusion-mitos {
+        grid-template-columns: 1fr; /* Pasa de 2 columnas a 1 */
+        gap: 20px;
     }
 
     /* SECCIÓN 03 - ¿POR QUÉ OCURRE? */
