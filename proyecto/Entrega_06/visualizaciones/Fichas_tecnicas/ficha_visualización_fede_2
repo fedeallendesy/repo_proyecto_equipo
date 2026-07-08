@@ -1,0 +1,20 @@
+# Ficha Técnica: Datos Fede
+
+**Descripción general:** Archivo transaccional de demanda que registra el promedio de validaciones de pasajeros en paraderos específicos, desglosado en bloques de media hora.
+
+*   **Formato:** `.csv` (Valores separados por comas)
+*   **Delimitador:** Coma (`,`)
+*   **Codificación:** `UTF-8`
+*   **Dimensiones:** 778.093 filas × 7 columnas
+
+## Variables
+
+| Columna | Tipo de Dato | Descripción |
+| :--- | :--- | :--- |
+| `Tipo_dia` | String | Categoría del día evaluado (Ej: LABORAL). |
+| `Modo` | String | Medio de transporte utilizado (Ej: BUS). |
+| `Paradero` | String | Código interno de la parada (Ej: E-13-278-OP-30). |
+| `SIMIT` | String | Código de usuario del paradero visible en calle (Ej: PI228). |
+| `Comuna` | String | Comuna donde se ubica el paradero (Ej: MAIPÚ). |
+| `Media_hora` | String | Bloque horario de 30 minutos (Ej: 05:30:00). |
+| `Subidas_Promedio` | Float | Promedio histórico de validaciones en ese paradero y bloque horario. |
